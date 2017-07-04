@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_48">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:adjustViewBounds="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/bg_zctj" />
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/total_assets_picchart"
+                    android:layout_width="190dp"
+                    android:layout_height="190dp"
+                    android:layout_centerInParent="true"
+                    android:gravity="center">
+
+                </com.github.mikephil.charting.charts.PieChart>
+
+                <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+
+                <!--android:adjustViewBounds="false"-->
+                <!--android:scaleType="centerInside"-->
+                <!--android:src="@drawable/img_ljsy_circle" />-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/total_assets_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lines="1"
+                        android:text="0.00"
+                        android:textColor="@color/select_list_detail"
+                        android:textSize="@dimen/sp_24" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginTop="@dimen/dp_13"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="总资产"
+                            android:textColor="@color/select_list_title"
+                            android:textSize="@dimen/sp_13" />
+
+                        <ImageView
+                            android:id="@+id/total_assets_iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_6"
+                            android:adjustViewBounds="false"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/tips_notes" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_50"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="right">
+
+                    <TextView
+                        android:layout_width="@dimen/dp_6"
+                        android:layout_height="@dimen/dp_12"
+                        android:background="@drawable/text_ring_blue" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:text="可用余额"
+                    android:textColor="@color/select_list_earnings"
+                    android:textSize="@dimen/sp_10" />
+
+                <ImageView
+                    android:id="@+id/total_assets_available_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:adjustViewBounds="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/tips_notes"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/total_assets_available_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:lines="1"
+                    android:paddingLeft="@dimen/dp_30"
+                    android:text="0.00"
+                    android:textColor="@color/select_list_title"
+                    android:textSize="@dimen/sp_13" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_16"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="right">
+
+                    <TextView
+                        android:layout_width="@dimen/dp_6"
+                        android:layout_height="@dimen/dp_12"
+                        android:background="@drawable/btn_ring_red" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:text="冻结金额"
+                    android:textColor="@color/select_list_earnings"
+                    android:textSize="@dimen/sp_10" />
+
+                <ImageView
+                    android:id="@+id/total_assets_freeze_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:adjustViewBounds="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/tips_notes" />
+
+                <TextView
+                    android:id="@+id/total_assets_freeze_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:lines="1"
+                    android:paddingLeft="@dimen/dp_30"
+                    android:text="0.00"
+                    android:textColor="@color/select_list_title"
+                    android:textSize="@dimen/sp_13" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_16"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="right">
+
+                    <TextView
+                        android:layout_width="@dimen/dp_6"
+                        android:layout_height="@dimen/dp_12"
+                        android:background="@drawable/text_ring_green" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:text="理财产品"
+                    android:textColor="@color/select_list_earnings"
+                    android:textSize="@dimen/sp_10" />
+
+                <ImageView
+                    android:id="@+id/total_assets_finan_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:adjustViewBounds="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/tips_notes" />
+
+                <TextView
+                    android:id="@+id/total_assets_finan_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:lines="1"
+                    android:paddingLeft="@dimen/dp_30"
+                    android:text="0.00"
+                    android:textColor="@color/select_list_title"
+                    android:textSize="@dimen/sp_13" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_16"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="right">
+
+                    <TextView
+                        android:layout_width="@dimen/dp_6"
+                        android:layout_height="@dimen/dp_12"
+                        android:background="@drawable/text_ring_orange" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:text="债权产品"
+                    android:textColor="@color/select_list_earnings"
+                    android:textSize="@dimen/sp_10" />
+
+                <ImageView
+                    android:id="@+id/total_assets_claims_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:adjustViewBounds="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/tips_notes" />
+
+                <TextView
+                    android:id="@+id/total_assets_claims_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:lines="1"
+                    android:paddingLeft="@dimen/dp_30"
+                    android:text="0.00"
+                    android:textColor="@color/select_list_title"
+                    android:textSize="@dimen/sp_13" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

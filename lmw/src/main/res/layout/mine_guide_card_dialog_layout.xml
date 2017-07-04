@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true">
+    <TextView
+        android:id="@+id/tip_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_72"
+        android:layout_marginRight="@dimen/dp_20"
+        android:text="现金券红包使用后将直接返现至您的利民网账户，可用于提现哦"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_16"/>
+    <ImageView
+        android:id="@+id/img_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tip_tv"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/xszy_dx"/>
+    <com.example.administrator.lmw.view.SettingNextItemNotIconView
+        android:id="@+id/card_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_line"
+        android:layout_marginTop="@dimen/dp_10"
+        app:next_arrow="@drawable/btn_set_get"
+        app:next_hint_color="@color/text_black"
+        app:next_icon="@drawable/kqhb"
+        app:next_show_divider="true"
+        app:next_title="卡券红包"
+        app:next_title_color="@color/text_black"/>
+</RelativeLayout>

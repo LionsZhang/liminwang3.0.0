@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.example.administrator.lmw">
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="24"
+        android:versionCode="29"
+        android:versionName="3.0.0"/>
+
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.SET_DEBUG_APP"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+
+    <!-- 极光推送权限 -->
+    <permission
+        android:name="com.example.administrator.lmw.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature"/>
+
+    <uses-permission android:name="com.example.administrator.lmw.permission.JPUSH_MESSAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+
+    <application
+        android:name=".LmwApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo_xxx"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label">
+
+        <!-- 程序入口 -->
+        <activity
+            android:name=".main.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/splash_style">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <!-- 程序入口 -->
+        <!-- 友盟 -->
+
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="57d6730667e58e0d3f003e4b"/>
+
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:scheme="tencent1105111711"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity
+            android:name="com.umeng.socialize.editorpage.ShareActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.UMDefault"/>
+
+        <!-- 友盟渠道 -->
+        <!--
+         <meta-data android:value="Channel ID"
+            android:name="UMENG_CHANNEL"/>
+        -->
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}"/>
+        <!-- 主界面 -->
+        <activity
+            android:name=".main.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+
+        <!-- 引导页面 -->
+        <activity
+            android:name=".main.GuideActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/full_screen_style"/>
+        <!-- 注册 -->
+        <activity
+            android:name=".register.PhoneVerifyActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!-- 加载WebView页面 -->
+        <activity
+            android:name=".main.WebViewActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!-- 设置 -->
+
+
+        <!-- 累计收益页面 -->
+        <activity
+            android:name=".mine.cumulative.CumulativeActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+
+        <!-- 我的投资页面 -->
+        <activity
+            android:name=".mine.invest.InvestmentActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!-- 设置手势密码 -->
+        <activity
+            android:name=".register.GesturePasswardActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!-- 登录 -->
+        <activity
+            android:name=".login.LoginActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/full_screen_style"/>
+        <activity
+            android:name=".login.SetPasswardtActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".login.FindPasswardVerifyActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".mine.seting.BindBankActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".mine.seting.SetExchargePsw"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible"/>
+        <activity
+            android:name=".mine.seting.ConfirmExchargePsw"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible"/>
+
+        <!-- 债权详情页面 -->
+        <activity
+            android:name=".finance.activity.DetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+
+        <!-- 理财详情页面 -->
+        <activity
+            android:name=".finance.activity.DetailProductActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+
+        <!-- 消息中心 -->
+        <activity
+            android:name=".select.Activity.MessageCenterActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+
+        <!-- 理财购买页面 -->
+        <activity
+            android:name=".finance.activity.ProblemBuy"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+
+        <!-- 债权购买页面 -->
+        <activity
+            android:name=".finance.activity.CreditBuy"
+            android:screenOrientation="portrait"/>
+
+        <!-- 理财 债权 子列表 -->
+        <activity
+            android:name=".finance.activity.ProductItem"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+
+        <!-- 红包 现金券 -->
+        <activity
+            android:name=".mine.card.CardActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+
+        <!-- 可用余额 -->
+        <activity
+            android:name=".mine.account.AccountActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+
+        <!-- 我的转让 -->
+        <activity
+            android:name=".mine.transfer.TransferActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+
+        <!-- 购买成功页面 -->
+        <activity
+            android:name=".finance.activity.BuySuccee"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+
+
+        <!-- 选择银行卡 -->
+        <activity
+            android:name=".mine.seting.ChooseBankCardActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!-- 已绑卡绑卡界面 -->
+        <activity
+            android:name=".mine.seting.BindBankSuccussActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!-- 设置账户 -->
+        <activity
+            android:name=".mine.seting.SetingActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!-- 设置账户 -->
+        <!-- 设置账户 -->
+        <activity
+            android:name=".mine.seting.UserInfoActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!-- 设置账户 -->
+        <activity
+            android:name=".mine.seting.ResetTradPswVerifyActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".mine.seting.SetTradPswVerifyActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!-- 设置账户修改登录密码验证旧密码 -->
+        <activity
+            android:name=".mine.seting.VerifyOldLoginPswActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!-- 红包使用说明 -->
+        <activity
+            android:name=".mine.card.CardExplanation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!-- 充值 -->
+        <activity
+            android:name=".mine.fill.FillActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize"/>
+        <!-- 提现 -->
+        <activity
+            android:name=".mine.credit.CreditActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible"/>
+        <!-- 提现 -->
+        <activity
+            android:name=".mine.credit.CreditResultActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!-- 提现 -->
+        <activity
+            android:name=".mine.fill.FillResultActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!-- 提现 -->
+        <activity
+            android:name=".mine.fill.FillConfirmActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!-- 邀请好友页面 -->
+        <activity
+            android:name=".mine.invite.InviteFriendsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!-- 好友列表 -->
+        <activity
+            android:name=".mine.invite.activity.FriendsListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!-- 更多 -->
+        <activity
+            android:name=".mine.more.MoreActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!-- 意见反馈 -->
+        <activity
+            android:name=".mine.more.activity.FeedbackActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!-- 更多webview -->
+        <activity
+            android:name=".mine.more.activity.WebViewMore"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!-- 确认转让 -->
+        <activity
+            android:name=".mine.invest.ConfirmTransferActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!-- 手势密码登录 -->
+        <activity
+            android:name=".login.GesturePswLoginActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!-- 修改交易密码 -->
+        <activity
+            android:name=".mine.seting.MotifyExchargePswVerify"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize"/>
+        <!-- 已使用和过期卡券页面 -->
+        <activity android:name=".mine.card.CardHistoryListActivity"/>
+        <!-- 已拆开红包页面 -->
+        <activity android:name=".mine.card.RedCardSeparateActivity"/>
+
+        <!-- 极光推送配置 -->
+
+
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":push_service"
+            tools:replace="android:process">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER"/>
+                <action android:name="cn.jpush.android.intent.REPORT"/>
+                <action android:name="cn.jpush.android.intent.PushService"/>
+                <action android:name="cn.jpush.android.intent.PUSH_TIME"/>
+            </intent-filter>
+        </service>
+
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService"/>
+
+                <category android:name="com.example.administrator.lmw"/>
+            </intent-filter>
+        </service>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY"/>
+
+                <category android:name="com.example.administrator.lmw"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="com.example.administrator.lmw"/>
+            </intent-filter>
+        </activity>
+
+        <!-- Required SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false"/>
+
+        <!-- Required SDK核心功能 -->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver"/>
+
+        <!-- User defined. 用户自定义的广播接收器 -->
+        <receiver
+            android:name=".receiver.PushMessageReceiver"
+            android:enabled="true">
+            <intent-filter>
+
+                <!-- 用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.REGISTRATION"/>
+                <!-- 用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED"/>
+                <!-- 用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED"/>
+                <!-- 用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED"/>
+                <!-- 接收网络变化 连接/断开 -->
+                <action android:name="cn.jpush.android.intent.CONNECTION"/>
+
+                <category android:name="com.example.administrator.lmw"/>
+            </intent-filter>
+        </receiver>
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default"/>
+
+          <!-- Required. AppKey 正式环境key -->
+      <!--    <meta-data
+              android:name="JPUSH_APPKEY"
+              android:value="deb1fd7494226f6330694737" />
+-->
+
+        <!-- Required. AppKey 测式环境key -->
+        <meta-data
+
+            android:name="JPUSH_APPKEY"
+            android:value="2ff667f965fe2b17ba731384"/>
+        <!-- 消息设置 -->
+        <activity
+            android:name=".mine.more.activity.MessageSettingsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--  -->
+        <activity
+            android:name=".finance.activity.ImageCarousel"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/full_screen_style"/>
+        <!--  -->
+        <activity
+            android:name=".mine.card.CashCouponActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/full_screen_style"/>
+        <!-- 适配Android7.0 访问手机文件路径需授权问题 -->
+        <!--
+            <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.administrator.lmw.fileprovider"
+            android:grantUriPermissions="true"
+            android:exported="false"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/apk_download_file" />
+        </provider>
+        -->
+
+
+        <!-- 我的投资 回款计划 -->
+        <activity
+            android:name=".mine.invest.activity.BackToThePlanActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!-- 我的投资 续投设置 -->
+        <activity
+            android:name=".mine.invest.activity.ContinueSetActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!-- 我的投资 待结卡券奖励 -->
+        <activity
+            android:name=".mine.invest.activity.TransferRewardActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 银行卡绑卡成功 -->
+
+        <activity
+            android:name=".mine.seting.DespositOperateSuccessActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+
+
+        <!--添加银行卡-->
+        <activity
+            android:name="com.example.administrator.lmw.mine.seting.BankCardActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".mine.seting.AccountManageActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".mine.seting.DespositOperateFailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".mine.seting.DesponsityStatueActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

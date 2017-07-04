@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dip"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+        <EditText
+            android:id="@+id/mEdt_parking_one"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:background="@drawable/exchange_psw_bg"
+            android:gravity="center"
+            android:inputType="numberPassword"
+            android:maxLength="1"
+            android:textSize="16sp" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+        <EditText
+            android:id="@+id/mEdt_parking_two"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:background="@drawable/exchange_psw_bg"
+            android:gravity="center"
+            android:inputType="numberPassword"
+            android:maxLength="1"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+        <EditText
+            android:id="@+id/mEdt_parking_three"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:background="@drawable/exchange_psw_bg"
+            android:gravity="center"
+            android:inputType="numberPassword"
+            android:maxLength="1"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+        <EditText
+            android:id="@+id/mEdt_parking_four"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:background="@drawable/exchange_psw_bg"
+            android:gravity="center"
+            android:inputType="numberPassword"
+            android:maxLength="1"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+        <EditText
+            android:id="@+id/mEdt_parking_five"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:background="@drawable/exchange_psw_bg"
+            android:gravity="center"
+            android:inputType="numberPassword"
+            android:maxLength="1"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginRight="15dp"
+        android:gravity="center" >
+
+        <EditText
+            android:id="@+id/mEdt_parking_six"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:background="@drawable/exchange_psw_bg"
+            android:gravity="center"
+            android:inputType="numberPassword"
+            android:maxLength="1"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

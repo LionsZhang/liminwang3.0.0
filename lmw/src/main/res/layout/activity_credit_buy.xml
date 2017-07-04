@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_item_layout" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_gray"
+        android:orientation="vertical">
+
+        <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_bule"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_10">
+
+                <TextView
+                    android:id="@+id/credit_buy_title_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp_14" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/white_lins"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_bule"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_10">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center|left"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|bottom|left"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/credit_buy_earnings_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dp_40" />
+
+                        <TextView
+                            android:id="@+id/credit_buy_earnings_tv_x"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:text="--"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dp_24" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:text="%"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dp_17" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="预期年化"
+                        android:textColor="@color/white_gray"
+                        android:textSize="@dimen/dp_12" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center|left"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/credit_buy_days_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="--"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dp_17" />
+
+                        <TextView
+                            android:id="@+id/credit_buy_days_unit_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="天"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dp_12" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_6"
+                        android:text="剩余期限"
+                        android:textColor="@color/white_gray"
+                        android:textSize="@dimen/dp_11" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center|right"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/credit_buy_moneys_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dp_17" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_6"
+                        android:text="剩余本金(元)"
+                        android:textColor="@color/white_gray"
+                        android:textSize="@dimen/dp_11" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/dp_6"
+                android:padding="@dimen/dp_10">
+
+                <EditText
+                    android:id="@+id/credit_buy_money_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:inputType="numberDecimal"
+                    android:maxLength="12"
+                    android:textColor="@color/text_black"
+                    android:textColorHint="@color/select_list_earnings"
+                    android:textSize="@dimen/dp_13" />
+
+                <Button
+                    android:id="@+id/credit_buy_full_btn"
+                    android:layout_width="@dimen/dp_45"
+                    android:layout_height="@dimen/dp_24"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_25"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="全投"
+                    android:textColor="@color/bg_bule"
+                    android:textSize="@dimen/dp_13" />
+
+                <ImageView
+                    android:id="@+id/credit_buy_full_prompt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingBottom="@dimen/dp_10"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:paddingRight="@dimen/dp_10"
+                    android:adjustViewBounds="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/tips_notes" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/buy_bg"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="实际应付"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/dp_13" />
+
+                <TextView
+                    android:id="@+id/credit_buy_actual_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_6"
+                    android:text="--/--"
+                    android:textColor="@color/select_list_detail"
+                    android:textSize="@dimen/dp_13" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="元"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/dp_13" />
+
+                <ImageView
+                    android:id="@+id/credit_buy_prompt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_6"
+                    android:adjustViewBounds="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/tips_notes" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/divide"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/buy_bg"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="预期收益"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/dp_13" />
+
+                <TextView
+                    android:id="@+id/credit_buy_income_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_6"
+                    android:text="--/--"
+                    android:textColor="@color/select_list_detail"
+                    android:textSize="@dimen/dp_13" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="元"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/dp_13" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_2"
+                android:layout_marginRight="@dimen/dp_2"
+                android:background="@color/buy_bg"
+                android:padding="@dimen/dp_8">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="可用余额"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/dp_13" />
+
+                    <TextView
+                        android:id="@+id/credit_buy_balance_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_6"
+                        android:textSize="@dimen/dp_13"
+                        android:text="--/--" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="元"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/dp_13" />
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/credit_buy_recharge_btn"
+                    android:layout_width="@dimen/dp_45"
+                    android:layout_height="@dimen/dp_24"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="@dimen/dp_25"
+                    android:background="@null"
+                    android:text="充值"
+                    android:textColor="@color/bg_bule"
+                    android:textSize="@dimen/sp_13" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_10"
+                android:text="同意授权利民网调用您的数字证书完成电子签名"
+                android:textColor="@color/select_list_earnings"
+                android:textSize="@dimen/dp_10"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+        <!--</ScrollView>-->
+
+        <Button
+            android:id="@+id/credit_buy_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/select_panic_buying_white_btn"
+            android:text="投资"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

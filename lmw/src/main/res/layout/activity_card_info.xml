@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_card_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray">
+
+    <!--银行卡信息-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_20"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:id="@+id/rl_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:background="@drawable/bank_card_bg">
+
+            <RelativeLayout
+                android:id="@+id/card_name_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/bank_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_bank_gf"/>
+
+                <TextView
+                    android:id="@+id/card_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_toRightOf="@+id/bank_icon"
+                    android:background="@null"
+                    android:gravity="left|bottom"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_16"/>
+
+                <TextView
+                    android:id="@+id/card_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_alignBottom="@+id/card_name"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_toRightOf="@id/card_name"
+                    android:background="@null"
+                    android:gravity="left|bottom"
+                    android:text="储蓄卡"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/sp_10"/>
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:padding="@dimen/dp_10"
+                    android:scaleType="center"
+                    android:src="@drawable/btn_my_card_shield"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/card_name_rl"
+                android:layout_marginRight="@dimen/dp_20"
+                android:background="@null"
+                android:gravity="left"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_18"/>
+        </RelativeLayout>
+
+        <!--预留手机号-->
+        <com.example.administrator.lmw.view.SettingNextItemNotIconView
+            android:id="@+id/sniniv_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_card"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/white"
+            app:next_arrow="@drawable/btn_set_get"
+            app:next_hint="132****8888 修改"
+            app:next_hint_color="@color/text_black_pre"
+            app:next_show_divider="true"
+            app:next_title="@string/txt_obligate_phone"
+            app:next_title_color="@color/text_gray"/>
+
+        <!--单笔支付限额-->
+        <com.example.administrator.lmw.view.SettingNextItemNotIconView
+            android:id="@+id/sniniv_one_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/sniniv_phone"
+            android:background="@color/white"
+            app:next_arrow="@drawable/btn_set_get"
+            app:next_hint="5万"
+            app:next_hint_color="@color/text_black_pre"
+            app:next_show_divider="true"
+            app:next_title="@string/txt_quota_onetime_pay"
+            app:next_title_color="@color/text_gray"/>
+
+        <!--每日支付限额-->
+        <com.example.administrator.lmw.view.SettingNextItemNotIconView
+            android:id="@+id/sniniv_oneday_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sniniv_one_pay"
+            android:background="@color/white"
+            app:next_arrow="@drawable/btn_set_get"
+            app:next_hint="50万"
+            app:next_hint_color="@color/text_black_pre"
+            app:next_show_divider="false"
+            app:next_title="@string/txt_quota_oneday_pay"
+            app:next_title_color="@color/text_gray"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/dp_14">
+
+        <TextView
+            android:id="@+id/back_plan_datas_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text=""
+            android:textColor="@color/select_list_title"
+            android:textSize="@dimen/sp_13" />
+
+        <TextView
+            android:id="@+id/back_plan_status_tv"
+            android:layout_width="@dimen/dp_38"
+            android:layout_height="@dimen/dp_18"
+            android:layout_alignParentRight="true"
+            android:background="@color/bg_bule"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_9" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/text_stroke" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/dp_14">
+
+        <TextView
+            android:id="@+id/back_plan_receivable_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text=""
+            android:textColor="@color/select_list_title"
+            android:textSize="@dimen/sp_13" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/back_plan_receivable_tv"
+            android:layout_toRightOf="@id/back_plan_receivable_tv"
+            android:text="元"
+            android:textColor="@color/select_list_earnings"
+            android:textSize="@dimen/sp_10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/back_plan_receivable_tv"
+            android:layout_marginTop="@dimen/dp_9"
+            android:text="应收本金"
+            android:textColor="@color/select_list_earnings"
+            android:textSize="@dimen/sp_11" />
+
+        <TextView
+            android:id="@+id/back_plan_income_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            android:textColor="@color/select_list_title"
+            android:textSize="@dimen/sp_13" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/back_plan_income_tv"
+            android:layout_toRightOf="@id/back_plan_income_tv"
+            android:text="元"
+            android:textColor="@color/select_list_earnings"
+            android:textSize="@dimen/sp_10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/back_plan_income_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_9"
+            android:text="应收收益"
+            android:textColor="@color/select_list_earnings"
+            android:textSize="@dimen/sp_11" />
+
+        <TextView
+            android:id="@+id/back_plan_total_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/total_yuan"
+            android:layout_toLeftOf="@+id/total_yuan"
+            android:text=""
+            android:textColor="@color/select_list_title"
+            android:textSize="@dimen/sp_13" />
+
+        <TextView
+            android:id="@+id/total_yuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/back_plan_receivable_tv"
+            android:layout_alignParentRight="true"
+            android:text="元"
+            android:textColor="@color/select_list_earnings"
+            android:textSize="@dimen/sp_10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/back_plan_total_tv"
+            android:layout_marginTop="@dimen/dp_9"
+            android:text="应收总额"
+            android:textColor="@color/select_list_earnings"
+            android:textSize="@dimen/sp_11" />
+
+    </RelativeLayout>
+
+</LinearLayout>

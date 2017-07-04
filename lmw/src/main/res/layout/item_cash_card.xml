@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/select_list"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_14"
+        android:layout_marginRight="@dimen/dp_14"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@drawable/bg_card"
+        android:paddingRight="@dimen/dp_3">
+
+        <LinearLayout
+            android:id="@+id/ll_card_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_160"
+            android:layout_centerVertical="true"
+            android:paddingTop="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_5"
+            android:paddingBottom="@dimen/dp_10"
+            android:orientation="vertical"
+            android:paddingRight="@dimen/dp_6">
+
+            <!--使用规则-->
+            <RelativeLayout
+                android:id="@+id/rl_useRule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_useRule"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_useRule"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_10"/>
+
+                <TextView
+                    android:id="@+id/tv_useRule"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/txt_useRule"
+                    android:layout_marginLeft="@dimen/dp_3"
+                    android:layout_toRightOf="@+id/txt_useRule"
+                    android:text="使用规则:单笔投资>=5000元"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_10"/>
+            </RelativeLayout>
+
+
+            <!--适用产品-->
+            <RelativeLayout
+                android:id="@+id/rl_supportedProduct"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/dp_2"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_supportedProduct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_supportedProduct"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_10"/>
+
+                <TextView
+                    android:id="@+id/tv_supportedProduct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/txt_supportedProduct"
+                    android:layout_alignTop="@+id/txt_supportedProduct"
+                    android:layout_marginLeft="@dimen/dp_3"
+                    android:text="适用产品:定期宝、车贷宝"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_10"/>
+            </RelativeLayout>
+
+
+            <!--适用期限-->
+            <RelativeLayout
+                android:id="@+id/rl_supportedDeadline"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/dp_2"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_supportedDeadline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_supportedDeadline"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_10"/>
+
+                <TextView
+                    android:id="@+id/tv_supportedDeadline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/txt_supportedDeadline"
+                    android:layout_toRightOf="@+id/txt_supportedDeadline"
+                    android:layout_marginLeft="@dimen/dp_3"
+                    android:text="适用期限：30天、60天"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_10"/>
+
+            </RelativeLayout>
+
+
+            <!--加息天数或理财天数-->
+            <RelativeLayout
+                android:id="@+id/rl_days"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/dp_2"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_days"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_days_raise"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_10"/>
+
+
+                <TextView
+                    android:id="@+id/tv_days"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/txt_days"
+                    android:layout_toRightOf="@+id/txt_days"
+                    android:layout_marginLeft="@dimen/dp_3"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="加息天寿：15天"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_10"/>
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_card_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_15">
+
+            <!--卡券类型-->
+            <TextView
+                android:id="@+id/tv_card_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:drawableLeft="@drawable/line_left"
+                android:drawablePadding="@dimen/dp_6"
+                android:drawableRight="@drawable/line_right"
+                android:padding="@dimen/dp_3"
+                android:text="@string/txt_cash_coupon"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_12"/>
+
+            <!--面额-->
+            <com.example.administrator.lmw.view.MoneyTextView
+                android:id="@+id/tv_card_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_card_type"
+                android:layout_below="@+id/tv_card_type"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:gravity="center"
+                android:text="￥8"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_14"/>
+
+
+        </RelativeLayout>
+
+        <!--标记-->
+        <ImageView
+            android:id="@+id/iv_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_90"
+            android:layout_marginTop="@dimen/dp_6"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_yz_gq"/>
+
+
+    </RelativeLayout>
+
+
+    <!--有效日期、过期日期和展开-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_14"
+        android:layout_marginRight="@dimen/dp_14"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_down_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_14"
+            android:drawablePadding="@dimen/dp_5"
+            android:drawableRight="@drawable/jt_down_gray"
+            android:paddingBottom="@dimen/dp_8"
+            android:paddingTop="@dimen/dp_8"
+            android:text="@string/txt_down"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/sp_9"/>
+
+        <TextView
+            android:id="@+id/tv_validity_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:layout_marginStart="14dp"
+            android:text="@string/txt_validity_time"
+            android:textColor="@color/select_list_earnings"
+            android:textSize="@dimen/sp_10"/>
+
+    </RelativeLayout>
+
+
+    <!--展开查看-->
+    <LinearLayout
+        android:id="@+id/ll_card_use_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_14"
+        android:layout_marginRight="@dimen/dp_14"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dp_10"
+        android:visibility="visible">
+
+        <View
+            android:id="@+id/line_divied"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/line_dash"
+            android:layerType="software"/>
+
+        <!--投资产品 或者 有效日期 -->
+        <TextView
+            android:id="@+id/tv_used_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:layout_marginTop="@dimen/dp_6"
+            android:drawableLeft="@drawable/p_gray"
+            android:drawablePadding="@dimen/dp_5"
+            android:text="投资产品:定期宝c07020301"
+            android:textColor="@color/select_list_earnings"
+            android:textSize="@dimen/sp_10"
+            android:visibility="gone"/>
+
+        <!--使用终端 或者 投资终端-->
+        <TextView
+            android:id="@+id/tv_supportedPlatform"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:layout_marginTop="@dimen/dp_6"
+            android:drawableLeft="@drawable/p_gray"
+            android:drawablePadding="@dimen/dp_5"
+            android:text="@string/txt_coupon_supportedPlatform"
+            android:textColor="@color/select_list_earnings"
+            android:textSize="@dimen/sp_10"/>
+
+        <!--使用时间-->
+        <TextView
+            android:id="@+id/tv_used_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:layout_marginTop="@dimen/dp_6"
+            android:drawableLeft="@drawable/p_gray"
+            android:drawablePadding="@dimen/dp_5"
+            android:text="使用时间：2017-02-05"
+            android:textColor="@color/select_list_earnings"
+            android:textSize="@dimen/sp_10"
+            android:visibility="gone"/>
+
+        <!--理财天数 或 加息天数-->
+        <TextView
+            android:id="@+id/tv_validity_days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:layout_marginTop="@dimen/dp_6"
+            android:drawableLeft="@drawable/p_gray"
+            android:drawablePadding="@dimen/dp_5"
+            android:text="加息天数：5天"
+            android:textColor="@color/select_list_earnings"
+            android:textSize="@dimen/sp_10"
+            android:visibility="gone"/>
+
+        <!--来源-->
+        <TextView
+            android:id="@+id/tv_acquireSource"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:layout_marginTop="@dimen/dp_6"
+            android:drawableLeft="@drawable/p_gray"
+            android:drawablePadding="@dimen/dp_5"
+            android:text="@string/txt_coupon_acquireSource"
+            android:textColor="@color/select_list_earnings"
+            android:textSize="@dimen/sp_10"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

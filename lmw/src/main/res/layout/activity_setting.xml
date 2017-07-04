@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/list_default_divider"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/title_layout"
+            layout="@layout/title_item_layout"/>
+
+        <com.example.administrator.lmw.view.SettingNextItemNotIconView
+            android:id="@+id/name_set_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:next_arrow="@drawable/btn_set_get"
+            app:next_hint_color="@color/text_black"
+            app:next_icon="@drawable/ic_txboy"
+            app:next_show_divider="true"
+            app:next_title="姓名"
+            app:next_title_color="@color/text_black_pre"/>
+
+        <com.example.administrator.lmw.view.SettingNextItemNotIconView
+            android:id="@+id/bank_manage_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:next_arrow="@drawable/btn_set_get"
+            app:next_hint="账户ID12000000"
+            app:next_hint_color="@color/text_black"
+            app:next_icon="@drawable/logo_xw_zhsz"
+            app:next_show_divider="true"
+            app:next_title="银行存管账户"
+            app:next_title_color="@color/text_black_pre"/>
+
+        <com.example.administrator.lmw.view.SettingNextItemNotIconView
+            android:id="@+id/vip_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:next_arrow="@drawable/btn_set_get"
+            app:next_hint="青铜会员"
+            app:next_hint_color="@color/text_black"
+            app:next_icon="@drawable/ic_vip"
+            app:next_show_divider="true"
+            app:next_title="会员中心"
+            app:next_title_color="@color/text_black_pre"/>
+
+        <com.example.administrator.lmw.view.SettingNextItemNotIconView
+            android:id="@+id/qr_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:next_arrow="@drawable/btn_set_get"
+            app:next_hint_color="@color/text_black"
+            app:next_hint_icon="@drawable/ic_qr02"
+            app:next_icon="@drawable/ic_qr01"
+            app:next_show_divider="true"
+            app:next_title="我的二维码"
+            app:next_title_color="@color/text_black_pre"/>
+
+        <com.example.administrator.lmw.view.SettingNextItemNotIconView
+            android:id="@+id/card_set"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:next_arrow="@drawable/btn_set_get"
+            app:next_hint="未绑定"
+            app:next_hint_color="@color/text_gray"
+            app:next_icon="@drawable/ic_card01"
+            app:next_long_divider_type="no"
+            app:next_show_divider="true"
+            app:next_title_color="@color/text_black_pre"
+            app:next_title="银行卡管理"/>
+
+        <com.example.administrator.lmw.view.SettingNextItemNotIconView
+            android:id="@+id/risk_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:next_arrow="@drawable/btn_set_get"
+            app:next_hint_color="@color/text_gray"
+            app:next_icon="@drawable/risk_tip"
+            app:next_long_divider_type="no"
+            app:next_show_divider="true"
+            app:next_title="风险评估"
+            app:next_title_color="@color/text_black_pre"/>
+
+        <com.example.administrator.lmw.view.SettingNextItemNotIconView
+            android:id="@+id/esignature_authorize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:visibility="gone"
+            app:next_arrow="@drawable/btn_set_get"
+            app:next_hint="立即授权"
+            app:next_hint_color="@color/text_gray"
+            app:next_icon="@drawable/authorize"
+            app:next_long_divider_type="no"
+            app:next_show_divider="false"
+            app:next_title="电子合同授权"
+            app:next_title_color="@color/text_black_pre"/>
+
+
+        <com.example.administrator.lmw.view.SettingNextItemNotIconView
+            android:id="@+id/login_pw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:background="@color/white"
+            app:next_arrow="@drawable/btn_set_get"
+            app:next_hint="修改"
+            app:next_hint_color="@color/text_gray"
+            app:next_show_divider="true"
+            app:next_title="登录密码"
+            app:next_title_color="@color/text_black_pre"/>
+
+        <com.example.administrator.lmw.view.SettingNextItemNotIconView
+            android:id="@+id/charge_set"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:next_arrow="@drawable/btn_set_get"
+            app:next_hint="未设置"
+            app:next_hint_color="@color/text_gray"
+            app:next_show_divider="true"
+            app:next_title="交易密码"
+            app:next_title_color="@color/text_black_pre"/>
+
+        <com.example.administrator.lmw.view.SettingNextItemNotIconView
+            android:id="@+id/hand_pw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:next_arrow="@drawable/btn_set_get"
+            app:next_hint="未设置"
+            app:next_hint_color="@color/text_gray"
+            app:next_long_divider_type="bottom"
+            app:next_show_divider="false"
+            app:next_title="手势密码"
+            app:next_title_color="@color/text_black_pre"/>
+
+        <TextView
+            android:id="@+id/tv_logout"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_marginTop="@dimen/dp_20"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="退出当前账号"
+            android:textColor="@color/text_blue"
+            android:textSize="@dimen/sp_14"/>
+
+    </LinearLayout>
+</ScrollView>

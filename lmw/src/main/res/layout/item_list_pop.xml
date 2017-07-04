@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/main_pop_bg"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_4">
+
+    <TextView
+        android:id="@+id/invite_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_52"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@drawable/guest_popuwindow_selector"
+        android:drawableLeft="@drawable/ic_main_more_inv"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dp_25"
+        android:paddingRight="@dimen/dp_25"
+        android:text="邀请好友"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/sp_14" />
+
+    <View
+        android:id="@+id/line_bottom_1"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="1px"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/first_divide" />
+
+    <TextView
+        android:id="@+id/request_service"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_52"
+        android:layout_below="@+id/invite_tv"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/guest_popuwindow_selector"
+        android:drawableLeft="@drawable/ic_main_more_service"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dp_25"
+        android:paddingRight="@dimen/dp_25"
+        android:text="在线客服"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/sp_14" />
+
+    <View
+        android:id="@+id/line_bottom_2"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="1px"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/first_divide" />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_52"
+        android:layout_below="@+id/request_service"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/guest_popuwindow_selector"
+        android:drawableLeft="@drawable/ic_main_more_qa"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dp_25"
+        android:paddingRight="@dimen/dp_25"
+        android:text="常见问题"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/sp_14" />
+    <View
+        android:id="@+id/line_bottom_3"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="1px"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/first_divide" />
+
+    <TextView
+        android:id="@+id/finance_caculate_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_52"
+        android:layout_below="@+id/question"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/guest_popuwindow_selector"
+        android:drawableLeft="@drawable/ic_ind_jsq"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dp_25"
+        android:paddingRight="@dimen/dp_25"
+        android:text="  理财计算器"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/sp_14" />
+</LinearLayout>

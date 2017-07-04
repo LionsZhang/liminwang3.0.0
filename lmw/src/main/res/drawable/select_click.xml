@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:insetBottom="0.0px"
+    android:insetLeft="0.0px"
+    android:insetRight="0.0px"
+    android:insetTop="0.0px">
+    <selector>
+        <item android:state_pressed="true">
+            <shape>
+                <gradient
+                    android:angle="270.0"
+                    android:endColor="@color/list_default_divider"
+                    android:startColor="@color/list_default_divider" />
+            </shape>
+        </item>
+        <item>
+            <shape>
+                <gradient
+                    android:angle="270.0"
+                    android:endColor="@color/select_list_buy_lin"
+                    android:startColor="@color/select_list_buy_lin" />
+            </shape>
+        </item>
+    </selector>
+</inset>

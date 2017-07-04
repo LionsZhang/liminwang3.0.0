@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/sms_rel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:padding="@dimen/dp_20">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/log_bg_photos">
+
+            <TextView
+                android:id="@+id/sms_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_17"
+                android:gravity="center"
+                android:padding="@dimen/dp_4"
+                android:text="转让确认"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/sp_14" />
+
+            <View
+                android:id="@+id/sms_line_1"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/sms_title"
+                android:layout_marginTop="@dimen/dp_17"
+                android:background="@color/divide" />
+
+            <TextView
+                android:id="@+id/sms_tv_center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/sms_line_1"
+                android:layout_marginTop="@dimen/dp_20"
+                android:gravity="left"
+                android:paddingLeft="@dimen/dp_20"
+                android:paddingRight="@dimen/dp_20"
+                android:text="为确保账户安全，请进行短信验证"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/sms_tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sms_tv_center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp"
+                android:drawablePadding="@dimen/dp_6"
+                android:gravity="left"
+                android:paddingLeft="@dimen/dp_20"
+                android:paddingRight="@dimen/dp_20"
+                android:text="验证吗将发送至136****8888"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/sp_10" />
+
+            <LinearLayout
+                android:id="@+id/sms_psw_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sms_tv_content"
+                android:layout_marginTop="11dp"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp_20"
+                android:paddingRight="@dimen/dp_20">
+
+                <EditText
+                    android:id="@+id/edit_sms"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/edit_rectangle_box"
+                    android:hint="短信验证码"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:textColor="@color/announcement_tv"
+                    android:textColorHint="@color/sort_product_list_gray"
+                    android:textSize="@dimen/sp_11" />
+
+                <TextView
+                    android:id="@+id/edit_countdown"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/bg_bule"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:text="短信验证码"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_11" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/edit_lin2"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/sms_psw_container"
+                android:layout_marginTop="@dimen/dp_20"
+                android:background="@color/divide" />
+
+
+            <TextView
+                android:id="@+id/sms_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_lin2"
+                android:layout_marginBottom="@dimen/dp_15"
+                android:layout_marginTop="@dimen/dp_15"
+                android:gravity="center"
+                android:text="确认"
+                android:textColor="@color/divide"
+                android:textSize="@dimen/sp_14" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/sms_shut_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/sms_rel"
+        android:layout_alignTop="@id/sms_rel"
+        android:adjustViewBounds="false"
+        android:padding="@dimen/dp_10"
+        android:scaleType="centerInside"
+        android:src="@drawable/guanbi_white" />
+
+</RelativeLayout>

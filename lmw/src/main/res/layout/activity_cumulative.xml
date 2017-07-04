@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_bule"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_10">
+
+            <TextView
+                android:id="@+id/cumulative_total_assets_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:lines="1"
+                android:text="总资产"
+                android:textColor="@color/announcement_tv"
+                android:textSize="@dimen/dp_16" />
+
+            <TextView
+                android:id="@+id/cumulative_investment_earnings_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:lines="1"
+                android:text="累计收益"
+                android:textColor="@color/announcement_tv"
+                android:textSize="@dimen/dp_16" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/cumulative_line_iv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="false"
+            android:scaleType="matrix"
+            android:src="@drawable/white_triangle" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager_vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/select_list"
+            android:flipInterval="30"
+            android:persistentDrawingCache="animation" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,305 @@
+<resources>
+    <string name="app_name">利民网</string>
+    <string name="app_name_finance">利民网理财</string>
+    <string name="loading">正在加载...</string>
+    <string name="TxtApplicationCrash">很抱歉,程序出现异常,请重新操作</string>
+    <string name="net_break">网络中断，请检查您的网络状态</string>
+    <string name="permission_tips">利民网正在请求相关权限，拒绝将导致部分功能无法体验，是否同意？</string>
+    <string name="menu_select">首页</string>
+    <string name="menu_finance">理财</string>
+    <string name="menu_mine">我的</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">最后更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="header_hint_refresh_normal">下拉刷新</string>
+    <string name="header_hint_refresh_ready">松开刷新数据</string>
+    <string name="header_hint_refresh_loading">正在加载...</string>
+    <string name="header_hint_refresh_time">最后更新时间：</string>
+    <string name="footer_hint_load_normal">查看更多</string>
+    <string name="footer_hint_load_ready">松开载入更多</string>
+    <string name="check_new_version">检查新版本</string>
+    <string name="download_complete">下载完成,点击安装。</string>
+    <string name="new_version_download">新版下载</string>
+    <string name="downloading">下载中</string>
+    <string name="start_update">开始更新</string>
+    <string name="install_fail">安装失败</string>
+    <string name="no_new_version">已是最新版</string>
+    <string name="credit_transfer">债权转让</string>
+    <string name="financial_product">理财产品</string>
+    <string name="get_verify_code">获取验证码</string>
+    <string name="countdown_tip">秒后重新获取</string>
+    <string name="verficode_tips">获取验证码成功</string>
+    <string name="product_details">产品详情</string>
+    <string name="common_problem">常见问题</string>
+    <string name="investment_record">投资记录</string>
+    <string name="mine_finance">总资产(元)</string>
+    <string name="mine_accuclation">累计收益(元)</string>
+    <string name="mine_credit_num">%1$s元</string>
+    <string name="mine_couponNum">%1$s个可用</string>
+    <string name="update_version">利民网理财(%1$s)</string>
+    <string name="update_version_title">%1$s新增功能特性:</string>
+    <string name="current_version">当前版本%1$s</string>
+    <string name="mine_not_login">****</string>
+    <string name="mine_login">登录</string>
+    <string name="mine_register">注册</string>
+    <string name="repay_count">%1$s元 共%2$s笔</string>
+    <string name="max_credit_limit">单笔提现金额需≤%1$s元,请分批提现</string>
+    <string name="fill_bind_card">%1$s(尾号%2$s)</string>
+    <string name="fill_min_amount">充值金额最小为%1$s元</string>
+    <string name="mine_finance_not_login">注册领现金</string>
+    <string name="mine_get_not_login">获取佣金</string>
+    <string name="mine_more_not_login">关于利民网</string>
+    <string name="announcement">公告</string>
+    <string name="name_formate">%1$s**</string>
+    <string name="re_login">您的账号可能在其它设备上登录，为了您的账号安全请重新登录!</string>
+    <string name="notice">通知</string>
+    <string name="earnings">预期年化</string>
+    <string name="investment_time">投资期限</string>
+    <string name="panic_buying">立即购买</string>
+    <string name="remaining_time">剩余天数</string>
+    <string name="panic_buys">立即购买</string>
+    <string name="discount_tv">折让比例</string>
+    <string name="transfer_tv">转让债权</string>
+    <string name="message_center">消息中心</string>
+    <string name="txt_msg_center">消息提示内容</string>
+    <string name="Txt_cancle">取消</string>
+    <string name="Txt_sure">确定</string>
+    <string name="set_trade_psw">注意:为保证老用户交易安全,需设置交易密码,请先获取验证码！</string>
+    <string name="old_customer">尊敬的利民网用户您！利民网为了您的资金安全，已更换更安全的支付通道，并实现同卡进出，请您重新绑定银行卡。</string>
+    <string name="new_customer">请先绑定银行卡</string>
+    <string name="default_text">默认</string>
+    <string name="set_bind_card">%1$s(%2$s)</string>
+    <string name="bind_card_limit_credit">单笔限额%1$s万元 单日限额%2$s万元</string>
+    <string name="bind_card_limit_credit_not_limit">单笔限额%1$s万元 单日无限额</string>
+    <string name="reset_trade_psw">手机验证码将发送到%1$s</string>
+    <string name="fill_fail">充值失败:%1$s</string>
+    <string name="bind_bank_card_success">%1$s   %2$s</string>
+    <string name="select_claims">资金接力 | 收益更高</string>
+    <string name="select_regula">智能优选 | 收益稳健</string>
+    <string name="select_scatter">品种多元 | 自由选择</string>
+    <string name="select_new">首投专享 | 收益丰厚</string>
+    <string name="credit_number">您的可提现金额: %1$s</string>
+    <string name="free_credit_count">本月还可免费提现%1$s次</string>
+    <string name="credit_rate">本次提现费用为%1$s元</string>
+    <string name="first_min_tendered_money">%1$s元起投</string>
+    <string name="gesture_cw">密码错误，您还可以输入%1$s次</string>
+    <string name="fill_text">当日充值金额不可提现，只可用于投资。</string>
+    <string name="credit_text">1. 提现手续费由第三方支付公司收取，有投资记录的用户，根据您的会员等级，每月享有5次或以上的免费提现次数，超出部分按2元/笔收取。\n
+2. 没有投资记录的用户,每笔收取%2$s元的提现手续费。\n
+3. 工作日17:00前申请提现，当日24点前到账,工作日17:00后申请提现，下一工作日到账,节假日申请提现，申请后的下一工作日到账。\n
+4. 当日充值的资金当日不可提现。\n
+        5.单笔提现不能少于100元。\n
+</string>
+    <string name="upgrade_test">1. 有投资记录的用户,每月均有%1$s次免提现手续费的机会。超过%1$s次提现,每笔收取%2$s元的提现手续费。\n
+2. 没有投资记录的用户,每笔收取%2$s元的提现手续费。\n
+3. 工作日17:00前申请提现，当日24点前到账,工作日17:00后申请提现，下一工作日到账,节假日申请提现，申请后的下一工作日到账。\n
+4. 当日充值的资金当日不可提现。\n
+        5. 有投资记录的用户,每月均有%1$s次免提现手续费的机会。超过%1$s次提现,每笔收取%2$s元的提现手续费。\n
+6. 没有投资记录的用户,每笔收取%2$s元的提现手续费。\n
+7. 工作日17:00前申请提现，当日24点前到账,工作日17:00后申请提现，下一工作日到账,节假日申请提现，申请后的下一工作日到账。\n
+8. 当日充值的资金当日不可提现。\n
+</string>
+    <string name="credit">%1$s元</string>
+    <string name="exit_app_Prompt">再按一次返回键，退出软件</string>
+    <string name="bind_card_instrucition">"<font color='#999999'>\n" +
+                "为了保障您的资金安全，请添加本人的银行卡，添加完成后，充值和提现均只能使用该银行卡。如您在平台的交易和账户资金已清零，" +
+                "或该卡丢失/注销，请先联系客服热线</font><font color='#666666'>4008-318-999</font>申请更换，再发送以下资料至<font color='#666666'>kefu@liminwang.com:</font><Br/>\n" +
+                "<font color='#999999'>1.手持身份证正面照</font><Br/>\n" +
+                "<font color='#999999'>2.身份证正面及反面照</font><Br/>\n" +
+                "<font color='#999999'>3.原银行卡丢失或注销凭证</font><Br/>\n" +
+                "<font color='#999999'>4.近3个月的原银行卡交易流水证明及利民网账户的交易记录截图</font>"</string>
+    <string name="fill_limit">充值限额 详见《银行充值额度明细表》</string>
+    <string name="fill_success">若想确认，您可至“我的账户”内查看您的账户余额：\n若有疑问请联系客服4008-318-999</string>
+    <string name="total_assets">总资产=可用余额+\n冻结金额+理财产品（待收本金）\n+债权转让(待收本金)</string>
+    <string name="total_freeze">投标中、提现中或提取处理中资金会暂时冻结，满标及处理完成后资金会自动解冻。</string>
+    <string name="total_finan">包括投资理财产品中的定期宝、散标、新手专享、转让中标的的待收本金的总额，不包含未到期的预估收益</string>
+    <string name="total_claims">投资债权产品中的标的待收本金的总额</string>
+    <string name="friends_one">1、发送邀请链接给好友，通过邀请链接注册成功即成为您的一级好友；</string>
+    <string name="friends_two">2、一级好友再邀请他人，计为您的二级好友，最多两级；</string>
+    <string name="friends_three">3、自邀请成功起1年内，好友在利民网投资您将享有推荐收益（佣金）。</string>
+    <string name="friends_four" formatted="false">一级好友奖励：好友单笔年化投资金额x1.0%（佣金率）</string>
+    <string name="friends_five" formatted="false">二级好友奖励：好友单笔年化投资金额x0.5%（佣金率）</string>
+    <string name="friends_six" formatted="false">TIPS：佣金率会根据产品进行调整，具体以页面公示为准</string>
+    <string name="friends_seven" formatted="false">
+        注：年化投资金额计算公式：\n
+        1、“一次性还本付息”、“按月付息”产品：年化投资金额＝投资金额*投资期限/360\n
+        2、“等额本息”、“等额本金”产品：年化投资金额＝第1期回款本金*1/12+第2期回款本金*2/12+…+第i期 回款本金*i/12（期数=投资期限/30）</string>
+    <string name="more_photo">利民网投资人专享热线\n4008-318-999\n服务时间\n9:00-21:00(周一至周五)\n9:00-18:00(周六至周日)</string>
+    <string name="more_cat">已成功复制公众号，点击“去关注”\n打开微信-粘贴-关注“利民网平台”</string>
+    <string name="more_QQ">已成功复制QQ群号，点击“加QQ群”\n打开QQ-粘贴-找群-申请加入</string>
+    <string name="confirm_transfer_one">1、每笔投资在封闭期（60天）后，且剩余期限大于33天可支持最多1次转让操作，转让期限为发布后72小时，发起后不可撤回，项目在还款日期前三天内不能转让；</string>
+    <string name="confirm_transfer_two">2、转让金额为待收本金+截至债转结束日待收利息，金额及期限不能拆分。债转项目总额为待收本金，认购人垫付待收利息，借款人偿还给认购人。</string>
+    <string name="confirm_transfer_three">3、自转让结束次日起，对转让人已转让成功的份额停止计息。认购人自转让结束次日起享有所认购份额的收益，认购人不能再转让。</string>
+    <string name="confirm_transfer_four">4、转让成功的份额和收益在转让结束次日到达转让人的可用余额，同时更新还款计划；</string>
+    <string name="confirm_transfer_five">5、转让结束后，未成功转出的份额返回到转让人我的投资列表中（状态：计息中），继续按原标利率获得回款和收益，更新还款计划；</string>
+    <string name="mask_one">常用功能收在这里偶\n试试一键直达吧</string>
+    <string name="share_content" formatted="false">【利民网】注册享好礼，预计年化收益8.5%-13.5%，前海股权交易中心挂牌上市（代码：666339）</string>
+    <string name="share_title">送你548元现金券，和我一起来利民网赚钱吧！</string>
+    <string name="bind_card_fail">绑卡失败有以下原因,请核对后重试:\n
+1.您选择的开户银行与对应的卡号不正确;\n
+2.您输入的身份证信息与银行卡信息不匹配;\n
+3.您填写的手机号码与银行柜台预留不符。\n
+</string>
+    <string name="credit_fail">当日充值金额不可提现，只可用于投资。</string>
+    <string name="title_activity_permission">PermissionActivity</string>
+    <string name="transfer_description">1.每笔投资在封闭期（60天）后，且剩余期限大于33天可支持最多1次转让操作，转让期限为发布后72小时，发起后不可撤回，项目在还款日期前三天内不能转让；
+        \n\n2.转让金额为待收本金+截至债转结束日待收利息，金额及期限不能拆分。债转项目总额为待收本金，认购人垫付待收利息，借款人偿还给认购人。
+        \n\n3.自转让结束次日起，对转让人已转让成功的份额停止计息。认购人自转让结束次日起享有所认购份额的收益，认购人不能再转让。
+        \n\n4.转让成功的份额和收益在转让结束次日到达转让人的可用余额，同时更新还款计划；
+        \n\n5.转让结束后，未成功转出的份额返回到转让人我的投资列表中（状态：计息中），继续按原标利率获得回款和收益，更新还款计划
+</string>
+
+    <string name="is_empty_1">哇哦，没有找到相关记录哦</string>
+    <string name="is_empty_2">通往土豪的路上有点拥挤，请耐心等待...</string>
+    <string name="internet_error_code">通往土豪的路上有点拥挤，请耐心等待...</string>
+
+    <string name="txt_card_over_coupon">查看已使用和已过期的现金券</string>
+    <string name="txt_card_over_voucher">查看已使用和已过期的抵扣券</string>
+    <string name="txt_card_over_raise">查看已使用和已过期的加息券</string>
+    <string name="txt_card_over_gold">查看已使用和已过期的理财金</string>
+    <string name="txt_card_select">优惠券选择</string>
+    <string name="txt_card">卡券</string>
+    <string name="txt_invest">去投资</string>
+    <string name="txt_use">使用说明</string>
+    <string name="txt_card_red_number">共%1$d张符合条件</string>
+    <string name="txt_use_scope">使用范围:%1$s</string>
+    <string name="txt_up">收起</string>
+    <string name="txt_stable">已过期</string>
+    <string name="txt_used">已使用</string>
+    <string name="txt_down">展开查看</string>
+    <string name="txt_cash_coupon">现金券</string>
+    <string name="txt_red">红包</string>
+    <string name="txt_voucher">抵扣券</string>
+    <string name="txt_raise_coupon">加息券</string>
+    <string name="txt_financial_gold">理财金</string>
+    <string name="txt_use_rule">使用规则：%1$s</string>
+    <string name="txt_validity_time">有效日期：%1$s</string>
+    <string name="txt_coupon_supportedDeadline">适用期限：%1$s</string>
+    <string name="txt_coupon_supportedPlatform">适用终端：%1$s</string>
+    <string name="txt_coupon_supportedProduct">适用产品：%1$s</string>
+    <string name="txt_financial_days">收益期限：%1$s天</string>
+    <string name="txt_useDate">使用日期：%1$s</string>
+    <string name="txt_overDate">过期日期：%1$s</string>
+    <string name="txt_useTime">使用时间：%1$s</string>
+    <string name="txt_investProduct">投资产品：%1$s</string>
+    <string name="txt_investPlatform">投资终端：%1$s</string>
+    <string name="txt_raise_days">加息天数：%1$s天</string>
+    <string name="txt_coupon_acquireSource">来源：%1$s</string>
+    <string name="can_use_coupon_card_num">可选</string>
+    <string name="coupon_selected">当前已选</string>
+    <string name="use_coupon_min_investamount">使用规则:单笔投资≥%1$s元</string>
+    <string name="use_coupon_not_suitable_rule">投资金额不符合条件</string>
+    <string name="txt_money">¥ %1$s</string>
+    <string name="txt_unit">¥</string>
+    <string name="txt_show_card_time_tips">仅显示最近90天内的优惠券</string>
+    <string name="txt_red_unseparate">查看未拆红包</string>
+    <string name="txt_red_separate">查看已拆红包</string>
+    <string name="remanent_money">剩余%1$s%2$s</string>
+    <string name="total_money">融资总额%1$s%2$s</string>
+    <string name="txt_red_separate_1">已拆红包</string>
+    <string name="transfer_conditions">1.在封闭期（60天）后，且剩余期限大于33天可支持最多1次转让操作；\n2.发起后不可撤回；\n3.项目结算/回款日前3天内(含3日)不允许转让。
+</string>
+    <string name="txt_repayment_way">还款方式: %1$s</string>
+    <string name="txt_buy_man">购买人数:</string>
+    <string name="txt_num_man">%1$s人</string>
+    <string name="txt_transfer_money">%1$s元</string>
+    <string name="txt_format_day">%1$s天</string>
+    <string name="txt_yuan">元</string>
+    <string name="txt_mine_property">我的资产</string>
+    <string name="txt_transfer_reward">待结卡券奖励</string>
+    <string name="txt_jxbj">计息本金</string>
+    <string name="txt_lcll">理财利率</string>
+    <string name="txt_jxsy">加息收益</string>
+    <string name="txt_lcsy">理财收益</string>
+    <string name="txt_hkr">回款日</string>
+    <string name="txt_day">天</string>
+    <string name="txt_month">月</string>
+    <string name="txt_year">年</string>
+    <string name="txt_useRule">使用规则:</string>
+    <string name="txt_supportedProduct">适用产品:</string>
+    <string name="txt_supportedDeadline">适用期限:</string>
+    <string name="txt_days_raise">加息天数:</string>
+    <string name="txt_days_gold">收益期限:</string>
+    <string name="txt_no_data_cash">暂无任何相关记录</string>
+    <string name="txt_no_data_voucher">暂无任何相关记录</string>
+    <string name="txt_no_data_raise">暂无任何相关记录</string>
+    <string name="txt_no_data_gold">暂无任何相关记录</string>
+    <string name="text_transfer">啥也没有！空空如也！\n 赶紧行动赚取收益吧！</string>
+    <string name="text_more">更多</string>
+    <string name="text_bind_suc">绑卡成功</string>
+    <string name="text_bind_fail">绑卡失败</string>
+    <string name="text_bind_bankcard_suc">银行卡绑卡成功</string>
+    <string name="text_go_finace">我要理财</string>
+    <string name="text_redpacket_num">恭喜获得%1$s个红包</string>
+    <string name="text_redpacket_tip">分享给小伙伴，大家一起抢。</string>
+    <string name="text_share">分享给好友</string>
+    <string name="text_activity_tip_1">你达到%1$s活动参与条件，获得%2$s奖励。</string>
+    <string name="text_activity_tip_2">%1$s活动火热进行中，%2$s即可参与。</string>
+    <string name="text_check_activity_detail">查看活动详情</string>
+    <string name="text_esignature_protatal"><font color="#629eff"> <u>《数字证书服务协议》 </u></font></string>
+    <string name="buy_success">购买成功</string>
+    <string name="back_to_plan">1、默认为最大投资期限的退出日期\n2、若借款人申请在最大投资期限前退出，则以确认的退出日期为准。</string>
+    <string name="txt_close">关闭</string>
+    <string name="txt_tips">提示</string>
+    <string name="txt_bind_card">去绑卡</string>
+    <string name="txt_bind_card_tips">您还未绑卡，请绑卡后再操作</string>
+    <string name="txt_open_desposit_tips">请开通银行存管账户后再操作</string>
+    <string name="txt_go_open">去开通</string>
+    <string name="txt_limit_account_tips"><Data><![CDATA[<font color = "#666666">尊敬的用户，您好！由于存管银行规定，平台不支持未满十八周岁用户进行 开户投资操作，敬请谅解。<br> <br> <br>详情可咨询客服:4008-318-999</font>]]></Data></string>
+    <string name="txt_i_know">我知道了</string>
+    <string name="txt_call_center">联系客服</string>
+    <string name="txt_cancel_bind_card">确定要申请解绑银行卡吗？</string>
+    <string name="txt_open_desposit_account_title">利民网携手新网银行</string>
+    <string name="txt_open_desposit_account_tip1">个人账户升级为新网银行存管账户</string>
+    <string name="txt_open_desposit_account_tip2">为了保证资金安全 需先开通存管账户</string>
+    <string name="txt_see_details">了解详情</string>
+    <string name="txt_open_desposit_account">开通存管账户</string>
+    <string name="open_desposit">开通存管</string>
+    <string name="txt_fail_msg">失败提示:%1$s</string>
+    <string name="txt_desposit_account_name">账户ID:%1$s</string>
+    <string name="txt_desposit_account_money">账户余额￥:%1$s</string>
+    <string name="txt_risk_camuate"><Data><![CDATA[<font color="#2b5486">测测您的风险评分,全面了解您的风险承受能力<Br/>更科学的给您资产配置建议 立即查看》</font>]]></Data></string>
+    <string name="txt_risk_camuate_default"><Data><![CDATA[<font color="#666666">利民网默认您的风险承受能力为保<Br/>守型，如不符，您可以</font><font color="#629eff"> <u>重新评测</u></font><font color="#666666">。</font> ]]></Data></string>
+    <string name="txt_risk_camuate_dialog"><Data><![CDATA[<font color="#666666">您已完成实名认证,系统默认您的风险承 <Br/> 受能力为</font>
+        <font color="#2b5486"><b>保守型</b></font>(最低)]]></Data></string>
+    <string name="txt_bankcard">银行卡</string>
+    <string name="txt_cantact_guest"><Data><![CDATA[<font color="#999999" size="40">请联系客服处理 <br> 客服热线:</font><font color="#999999" size="34">4008-318-999</font>]]></Data></string>
+    <string name="txt_support_bank">支持银行</string>
+    <string name="txt_add_bankcard">添加银行卡</string>
+    <string name="txt_obligate_phone">预留手机号</string>
+    <string name="txt_quota_onetime_pay">单笔支付限额</string>
+    <string name="txt_quota_oneday_pay">每日支付限额</string>
+    <string name="txt_unbind_bankcard">解绑银行卡</string>
+    <string name="txt_motify">修改</string>
+    <string name="txt_online_service">在线客服</string>
+    <string name="txt_warm_prompt">温馨提示</string>
+    <string name="txt_warm_prompt_text">您的存管账户还在进行银行审核，需要银行存管账户开通成功后才能进行后续操作</string>
+    <string name="txt_sevice_phone">客服热线:400-8138-999</string>
+    <string name="txt_desposit_account_checking">存管账户开通审核中</string>
+    <string name="txt_desposit_account_sendback">存管账户开通被退回</string>
+    <string name="txt_desposit_account_reject">存管账户开通被驳回</string>
+    <string name="txt_return_reason">退回原因</string>
+    <string name="txt_retry_open">重新开通</string>
+    <string name="txt_open_suc">开通成功</string>
+    <string name="txt_open_fail">开通失败</string>
+    <string name="txt_motify_suc">修改成功</string>
+    <string name="txt_motify_fail">修改失败</string>
+    <string name="txt_invest_fail">投资失败</string>
+    <string name="txt_commit_suc">提交成功</string>
+    <string name="txt_commit_fail">提交失败</string>
+    <string name="txt_motify_phone">%1$s 修改</string>
+    <string name="txt_go_back_home">回到我的账户</string>
+    <string name="txt_fill_fail">充值失败</string>
+    <string name="txt_unbind_suc">解绑成功</string>
+    <string name="txt_unbind_fail">解绑失败</string>
+    <string name="txt_unbind_card_suc">银行卡解绑成功</string>
+    <string name="txt_rebind_card">重新绑定银行卡</string>
+    <string name="toast_authorize">恭喜授权成功！</string>
+    <string name="txt_xw_unopen">暂未开通银行存管</string>
+    <string name="txt_xw_open">资金受新网银行监管保护中</string>
+
+
+</resources>

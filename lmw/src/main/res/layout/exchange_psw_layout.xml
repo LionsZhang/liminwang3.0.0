@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:layout_height="60dp">
+<EditText
+    android:id="@+id/psw_one"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:text="d"
+    android:background="@drawable/exchange_psw_bg"/>
+<EditText
+    android:id="@+id/psw_two"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:text="d"
+    android:background="@drawable/exchange_psw_bg"/>
+<EditText
+    android:id="@+id/psw_three"
+    android:layout_weight="1"
+    android:layout_width="0dp"
+    android:gravity="center"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:text="d"
+    android:layout_height="match_parent"
+    android:background="@drawable/exchange_psw_bg"/>
+<EditText
+    android:id="@+id/psw_four"
+    android:layout_weight="1"
+    android:layout_width="0dp"
+    android:gravity="center"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:text="d"
+    android:layout_height="match_parent"
+    android:background="@drawable/exchange_psw_bg"/>
+<EditText
+    android:id="@+id/psw_five"
+    android:layout_weight="1"
+    android:layout_width="0dp"
+    android:gravity="center"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:text="d"
+    android:layout_height="match_parent"
+    android:background="@drawable/exchange_psw_bg"/>
+<EditText
+    android:id="@+id/psw_six"
+    android:layout_weight="1"
+    android:layout_width="0dp"
+    android:gravity="center"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:text="d"
+    android:layout_height="match_parent"
+    android:layout_marginRight="@dimen/dp_40"
+    android:background="@drawable/exchange_psw_bg"/>
+
+
+</LinearLayout>

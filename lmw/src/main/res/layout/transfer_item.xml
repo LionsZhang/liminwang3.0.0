@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/select_list"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_14">
+
+            <TextView
+                android:id="@+id/transfer_item_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="3"
+                android:lines="1"
+                android:text="定期宝 A1514651351135"
+                android:textColor="@color/select_list_title"
+                android:textSize="@dimen/dp_12" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:text="期限"
+                    android:textColor="@color/announcement_tv"
+                    android:textSize="@dimen/dp_12" />
+
+                <TextView
+                    android:id="@+id/transfer_item_term"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_6"
+                    android:lines="1"
+                    android:text="1/3"
+                    android:textColor="@color/announcement_tv"
+                    android:textSize="@dimen/dp_12" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/select_list" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_14">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="left"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/transfer_item_times_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:text="结息时间"
+                    android:textColor="@color/select_list_earnings"
+                    android:textSize="@dimen/dp_10" />
+
+                <TextView
+                    android:id="@+id/transfer_item_times"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:lines="1"
+                    android:text="2012-12-12"
+                    android:textColor="@color/announcement_tv"
+                    android:textSize="@dimen/dp_12" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="left"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:text="待收本息"
+                    android:textColor="@color/select_list_earnings"
+                    android:textSize="@dimen/dp_10" />
+
+                <TextView
+                    android:id="@+id/transfer_item_moneys"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:lines="1"
+                    android:text="1000.00"
+                    android:textColor="@color/select_list_detail"
+                    android:textSize="@dimen/dp_12" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:text="状态"
+                    android:textColor="@color/select_list_earnings"
+                    android:textSize="@dimen/dp_10" />
+
+                <TextView
+                    android:id="@+id/transfer_item_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:lines="1"
+                    android:text="未偿还"
+                    android:textColor="@color/announcement_tv"
+                    android:textSize="@dimen/dp_12" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

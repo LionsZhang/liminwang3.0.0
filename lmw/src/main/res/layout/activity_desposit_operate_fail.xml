@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_face"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_68"
+        android:scaleType="centerCrop"
+        android:src="@drawable/face_iv"/>
+
+    <TextView
+        android:id="@+id/tv_fail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_face"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_14"
+        android:gravity="center"
+        android:text="交易密码修改失败"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/sp_14"/>
+
+    <TextView
+        android:id="@+id/tv_fail_msg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_43"
+        android:layout_below="@+id/tv_fail"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_25"
+        android:gravity="center"
+        android:text="失败信息"
+        android:textColor="@color/text_black_pre"
+        android:textSize="@dimen/sp_16"/>
+
+    <TextView
+        android:id="@+id/tv_guest"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_43"
+        android:layout_below="@+id/tv_fail_msg"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_15"
+        android:gravity="center"
+        android:text="@string/txt_cantact_guest"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/sp_16"/>
+
+    <TextView
+        android:id="@+id/tv_cantact_guest"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_43"
+        android:layout_below="@+id/tv_guest"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/bg_bule"
+        android:gravity="center"
+        android:text="在线客服"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_16"/>
+
+    <TextView
+        android:id="@+id/tv_know"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_43"
+        android:layout_alignStart="@+id/tv_cantact_guest"
+        android:layout_below="@+id/tv_cantact_guest"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="我知道了"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/sp_18"/>
+
+
+</RelativeLayout>

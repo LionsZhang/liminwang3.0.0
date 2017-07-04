@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_bule"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_item_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_10">
+
+            <TextView
+                android:id="@+id/account_complete_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="全部"
+                android:textColor="@color/announcement_tv"
+                android:textSize="@dimen/dp_14" />
+
+            <TextView
+                android:id="@+id/account_buy_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="购买"
+                android:textColor="@color/announcement_tv"
+                android:textSize="@dimen/dp_14" />
+
+            <TextView
+                android:id="@+id/account_section_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="回款"
+                android:textColor="@color/announcement_tv"
+                android:textSize="@dimen/dp_14" />
+
+            <TextView
+                android:id="@+id/account_recharge_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="充值"
+                android:textColor="@color/announcement_tv"
+                android:textSize="@dimen/dp_14" />
+
+            <TextView
+                android:id="@+id/account_withdraw_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="提现"
+                android:textColor="@color/announcement_tv"
+                android:textSize="@dimen/dp_14" />
+
+            <TextView
+                android:id="@+id/account_other_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="其他"
+                android:textColor="@color/announcement_tv"
+                android:textSize="@dimen/dp_14" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/account_select_iv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="false"
+            android:src="@drawable/white_triangle"
+            android:scaleType="matrix" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager_vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:flipInterval="30"
+            android:background="@color/select_list"
+            android:persistentDrawingCache="animation" />
+    </LinearLayout>
+
+</LinearLayout>

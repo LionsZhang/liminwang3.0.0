@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/UdeskSDKUI/UdeskSDKUI.iml" filepath="$PROJECT_DIR$/UdeskSDKUI/UdeskSDKUI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gesturelock/gesturelock.iml" filepath="$PROJECT_DIR$/gesturelock/gesturelock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/liminwang3.0.0.iml" filepath="$PROJECT_DIR$/liminwang3.0.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lmw/lmw.iml" filepath="$PROJECT_DIR$/lmw/lmw.iml" />
+    </modules>
+  </component>
+</project>

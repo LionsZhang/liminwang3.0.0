@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/select_list"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_153">
+
+
+        <com.youth.banner.Banner
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_153"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+        <LinearLayout
+            android:id="@+id/announcement_notice_lin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#70000000"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_10"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/announcement_notice_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:text="邀请奖励"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp_12" />
+
+            <ImageView
+                android:id="@+id/announcement_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:adjustViewBounds="false"
+                android:scaleType="centerInside"
+                android:src="@drawable/btn_login_close" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_43"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_11"
+            android:adjustViewBounds="false"
+            android:scaleType="centerInside"
+            android:src="@drawable/select_announcement" />
+
+        <com.example.administrator.lmw.select.entity.utils.MarqueeTextView
+            android:id="@+id/announcement_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_12"
+            android:ellipsize="marquee"
+            android:focusableInTouchMode="true"
+            android:gravity="left"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/announcement_tv"
+            android:textIsSelectable="true"
+            android:textSize="@dimen/sp_12" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/select_list"
+        android:layout_height="@dimen/dp_10"/>
+
+</LinearLayout>

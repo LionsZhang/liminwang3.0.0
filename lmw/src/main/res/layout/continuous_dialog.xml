@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/log_bg_photos"
+    android:orientation="vertical">
+
+    <WebView
+        android:id="@+id/continuous_web"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_height="300dp">
+
+    </WebView>
+
+    <TextView
+        android:id="@+id/continuous_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:gravity="center"
+        android:padding="@dimen/dp_4"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/sp_16"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/continuous_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
+        android:paddingBottom="10dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/sp_14"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line_dash"
+        android:layerType="software"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/continuous_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
+        android:paddingBottom="10dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/sp_14"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/select_list_earnings" />
+
+    <TextView
+        android:id="@+id/continuous_one_bt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:background="@null"
+        android:gravity="center"
+        android:textColor="@color/text_blue"
+        android:textSize="@dimen/sp_14" />
+
+</LinearLayout>

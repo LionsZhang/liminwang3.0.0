@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/cumulative_lin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_10"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:adjustViewBounds="false"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_empty01" />
+
+        <TextView
+            android:id="@+id/cumulative_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:text="哇哦，没有找到相关记录哦"
+            android:textColor="@color/select_list_earnings"
+            android:textSize="@dimen/sp_10" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/dp_68"
+            android:adjustViewBounds="false"
+            android:scaleType="centerInside"
+            android:src="@drawable/arrow_empt" />
+
+        <Button
+            android:id="@+id/cumulative_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/buy_blue_btn"
+            android:gravity="center"
+            android:text="去投资"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16" />
+
+    </LinearLayout>
+
+    <com.example.administrator.lmw.view.XListView
+        android:id="@+id/cumulative_xlv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null">
+
+    </com.example.administrator.lmw.view.XListView>
+
+</LinearLayout>

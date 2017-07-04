@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/select_list">
+
+    <!--使用说明-->
+    <FrameLayout
+        android:id="@+id/fl_top_operate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_14"
+        android:layout_marginRight="@dimen/dp_14"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/bg_white_gray_shadow"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:drawablePadding="@dimen/dp_6"
+            android:drawableRight="@drawable/jt_right_blue"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_10"
+            android:text="@string/txt_use"
+            android:textColor="@color/bg_bule"
+            android:textSize="@dimen/sp_12"/>
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fl_bottom"
+        android:layout_below="@+id/fl_top_operate"
+        >
+
+        <!--无数据页面-->
+        <TextView
+            android:id="@+id/tv_no_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="@dimen/dp_17"
+            android:drawableTop="@drawable/img_empty01"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dp_50"
+            android:text="@string/is_empty_1"
+            android:textColor="@color/announcement_tv"
+            android:textSize="@dimen/sp_14"
+            android:visibility="gone"/>
+
+        <com.example.administrator.lmw.view.XListView
+            android:id="@+id/lv_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:divider="@null"/>
+    </FrameLayout>
+
+
+    <!--查看已使用和过期的优惠券-->
+    <FrameLayout
+        android:id="@+id/fl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_42"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/tv_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_42"
+            android:layout_gravity="center"
+            android:drawablePadding="@dimen/dp_3"
+            android:gravity="center"
+            android:textColor="@color/text_gray_light"
+            android:textSize="@dimen/sp_12"
+            android:visibility="visible"/>
+
+    </FrameLayout>
+
+</RelativeLayout>

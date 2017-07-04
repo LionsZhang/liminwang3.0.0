@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_exit_bg"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/list_default_divider" />
+
+        <LinearLayout
+            android:id="@+id/invest_one_lin"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="false"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_mytz_sel"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/invest_one_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:text="全部类型"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/sp_14" />
+
+            <ImageView
+                android:id="@+id/invest_one_iv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="false"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_mytz_sel" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/list_default_divider" />
+
+        <LinearLayout
+            android:id="@+id/invest_two_lin"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="false"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_mytz_sel"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/invest_two_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:text="可转让"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/sp_14" />
+
+            <ImageView
+                android:id="@+id/invest_two_iv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="false"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_mytz_sel"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/list_default_divider" />
+
+        <LinearLayout
+            android:id="@+id/invest_three_lin"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="false"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_mytz_sel"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/invest_three_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:text="转让中"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/sp_14" />
+
+            <ImageView
+                android:id="@+id/invest_three_iv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="false"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_mytz_sel"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/list_default_divider" />
+
+        <LinearLayout
+            android:id="@+id/invest_four_lin"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="false"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_mytz_sel"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/invest_four_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:text="转让过"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/sp_14" />
+
+            <ImageView
+                android:id="@+id/invest_four_iv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="false"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_mytz_sel"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/list_default_divider" />
+    </LinearLayout>
+
+</LinearLayout>

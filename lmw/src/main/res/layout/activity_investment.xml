@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_bule"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_item_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/select_list">
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:orientation="vertical">-->
+
+        <LinearLayout
+            android:id="@+id/invest_project"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/invest_project_lin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_10">
+
+                <TextView
+                    android:id="@+id/invest_project_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="项目"
+                    android:textColor="@color/bule_press"
+                    android:textSize="@dimen/dp_14" />
+
+                <ImageView
+                    android:id="@+id/invest_project_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_6"
+                    android:adjustViewBounds="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/con_sy_sel1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/invest_ment_lin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_10">
+
+                <TextView
+                    android:id="@+id/invest_ment_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="投资"
+                    android:textColor="@color/announcement_tv"
+                    android:textSize="@dimen/dp_14" />
+
+                <ImageView
+                    android:id="@+id/invest_ment_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_6"
+                    android:adjustViewBounds="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/con_sy_sel1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/invest_transfer_lin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_10">
+
+                <TextView
+                    android:id="@+id/invest_transfer_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="转让"
+                    android:textColor="@color/announcement_tv"
+                    android:textSize="@dimen/dp_14" />
+
+                <ImageView
+                    android:id="@+id/invest_transfer_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_6"
+                    android:adjustViewBounds="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/con_sy_sel1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/invest_section_lin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_10">
+
+                <TextView
+                    android:id="@+id/invest_section_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="回款"
+                    android:textColor="@color/announcement_tv"
+                    android:textSize="@dimen/dp_14" />
+
+                <ImageView
+                    android:id="@+id/invest_section_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_6"
+                    android:adjustViewBounds="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/con_sy_sel1" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/invest_lin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:paddingBottom="70dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:adjustViewBounds="false"
+                android:scaleType="centerInside"
+                android:src="@drawable/img_empty01" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/dp_10"
+                android:text="哇哦，没有找到相关记录哦"
+                android:textColor="@color/select_list_earnings"
+                android:textSize="@dimen/sp_10" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/dp_68"
+                android:adjustViewBounds="false"
+                android:scaleType="centerInside"
+                android:src="@drawable/arrow_empt" />
+
+            <Button
+                android:id="@+id/invest_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/buy_blue_btn"
+                android:gravity="center"
+                android:text="去投资"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_16" />
+
+        </LinearLayout>
+
+        <com.example.administrator.lmw.view.XListView
+            android:id="@+id/invest_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/transfer_bottom"
+            android:layout_below="@+id/invest_project"
+            android:divider="@null">
+
+        </com.example.administrator.lmw.view.XListView>
+
+        <!--</LinearLayout>-->
+
+        <LinearLayout
+            android:id="@+id/transfer_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/transfer_lin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_bule"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/transfer_no"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_10"
+                    android:text="可转让"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp_14" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:id="@+id/transfer_launch"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_10"
+                    android:text="发起转让"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp_14" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/transfer_reward"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:padding="@dimen/dp_14"
+                android:text="待结卡券奖励"
+                android:textColor="@color/text_black_pre"
+                android:textSize="@dimen/sp_10"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

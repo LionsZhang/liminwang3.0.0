@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="E:\liminwang3.0.0\UdeskSDKUI\build\intermediates\bundles\default\libs\udesk_sdk_3.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9b4a96e0f72e328944442affacef7fe9f784031d">
+        <dex dex="E:\liminwang3.0.0\lmw\build\intermediates\transforms\dex\other\debug\folders\1000\8\udesk_sdk_3.3.1_7c94d5ff2df2f00a47e3ec513beabef0b9f7dd83\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\liminwang3.0.0\lmw\libs\umeng_social_api.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a6671aee5204deb1a15ef274ac1039d1dce4447b">
+        <dex dex="E:\liminwang3.0.0\lmw\build\intermediates\transforms\dex\other\debug\folders\1000\2\umeng_social_api_9a62fd5e5ff99eacadb777948e2cc99ac2a96eeb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\liminwang3.0.0\lmw\libs\SocialSDK_Sina_Simplify.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5e3fea2d97eac9ae339608bf675cb55acd1c395c">
+        <dex dex="E:\liminwang3.0.0\lmw\build\intermediates\transforms\dex\other\debug\folders\1000\2\SocialSDK_Sina_Simplify_89262128209264858d820534e752e7cf1fed00b3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\liminwang3.0.0\lmw\build\intermediates\incremental-runtime-classes\other\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="E:\liminwang3.0.0\lmw\build\intermediates\transforms\dex\other\debug\folders\1000\10000\instant-run_ee7cf6c6c012d564dbc076a8b3b4de036abfafa1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\liminwang3.0.0\lmw\libs\SocialSDK_sms.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="65c6c9774506e6617b0531d4ba7c06620326d682">
+        <dex dex="E:\liminwang3.0.0\lmw\build\intermediates\transforms\dex\other\debug\folders\1000\2\SocialSDK_sms_ecd7e6dff188cfbfea177e8c38d30df5896d4708\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\liminwang3.0.0\lmw\build\intermediates\incremental-classes\other\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="32e275663e93d7a876c806fccba68544c1d71382">
+        <dex dex="E:\liminwang3.0.0\lmw\build\intermediates\transforms\dex\other\debug\folders\1000\10000\instant-run-bootstrap_975ee69c7f66cccc19c15623eb8acf86a5a30c97\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\liminwang3.0.0\lmw\libs\SocialSDK_QQ_Full.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="087d27aa9784f7b6dcf0447cb3f55db3f2bbb605">
+        <dex dex="E:\liminwang3.0.0\lmw\build\intermediates\transforms\dex\other\debug\folders\1000\2\SocialSDK_QQ_Full_af94dd25f4cee4207832fad5772a94850bbc0cb1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\liminwang3.0.0\lmw\libs\umeng_shareboard_widget.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="916d0bbe19fd457207622319d5ab21156d0b3db4">
+        <dex dex="E:\liminwang3.0.0\lmw\build\intermediates\transforms\dex\other\debug\folders\1000\2\umeng_shareboard_widget_868384d8c1741486a5042bedd68febbbff5301f7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\liminwang3.0.0\lmw\libs\umeng_social_net.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3ab269c4ad0d65ad67add01c37d9b925f71818e6">
+        <dex dex="E:\liminwang3.0.0\lmw\build\intermediates\transforms\dex\other\debug\folders\1000\2\umeng_social_net_8717c7de2e94adbcc8c4ac00894ebeaff0dc3e51\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\liminwang3.0.0\UdeskSDKUI\build\intermediates\bundles\default\libs\udesk-asmack-8-4.0.6.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1013b231faea151d83fc47ce400ba45deea385fd">
+        <dex dex="E:\liminwang3.0.0\lmw\build\intermediates\transforms\dex\other\debug\folders\1000\8\udesk-asmack-8-4.0.6_cd45cb96c7b930a00b5c6fc4e797fcdabca684c9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\liminwang3.0.0\UdeskSDKUI\build\intermediates\bundles\default\libs\universal-image-loader-1.9.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2ef539b6c1a74f529257e59434795e782a5ae40a">
+        <dex dex="E:\liminwang3.0.0\lmw\build\intermediates\transforms\dex\other\debug\folders\1000\8\universal-image-loader-1.9.4_a37377aef0c301ee3e600cada20dcd790fb1f89c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\liminwang3.0.0\lmw\libs\umeng_social_tool.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5c2a2c501ac3b03045aa8d1c9ac88c911711d11c">
+        <dex dex="E:\liminwang3.0.0\lmw\build\intermediates\transforms\dex\other\debug\folders\1000\2\umeng_social_tool_102246f82d32c15aa5c6386503f5332e2b700325\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\liminwang3.0.0\lmw\libs\open_sdk_r5781.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="cbac7d081542657d885efd7a529a9267d22ec080">
+        <dex dex="E:\liminwang3.0.0\lmw\build\intermediates\transforms\dex\other\debug\folders\1000\2\open_sdk_r5781_7df39b0eb0230f6acc0d28d44244dbd43fdcb419\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\liminwang3.0.0\lmw\libs\libammsdk.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="11b09244aedaa51bfd09269637be7c32c60da314">
+        <dex dex="E:\liminwang3.0.0\lmw\build\intermediates\transforms\dex\other\debug\folders\1000\2\libammsdk_fabe2cee9f1ddf3a61f999a2f4b32bf95c45bc1a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\liminwang3.0.0\UdeskSDKUI\build\intermediates\bundles\default\libs\bugly_crash_release__2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="cd835ee88fb1a4c4ccf0bc51c123efa8bf0ebd0b">
+        <dex dex="E:\liminwang3.0.0\lmw\build\intermediates\transforms\dex\other\debug\folders\1000\8\bugly_crash_release__2.1_64fd9033b8a7aae9423ad644ae7049a895c5c1bc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\liminwang3.0.0\lmw\libs\umeng_social_shareview.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9ac467b88d6b14567daf6adf3d9958f3a8b24c26">
+        <dex dex="E:\liminwang3.0.0\lmw\build\intermediates\transforms\dex\other\debug\folders\1000\2\umeng_social_shareview_470a5a5450597fa584f6cdbcf8cd80e27be68a88\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\liminwang3.0.0\lmw\libs\SocialSDK_WeiXin_Full.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="15b06a3c976a51ac52c0f0e810adc8f25c0c7979">
+        <dex dex="E:\liminwang3.0.0\lmw\build\intermediates\transforms\dex\other\debug\folders\1000\2\SocialSDK_WeiXin_Full_4bb202933f91810501e452083529042dd4e5f5b4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\liminwang3.0.0\lmw\libs\umeng_social_shareboard.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="aa6e837539636ddc1df56d499fe7404dc03505a1">
+        <dex dex="E:\liminwang3.0.0\lmw\build\intermediates\transforms\dex\other\debug\folders\1000\2\umeng_social_shareboard_8528656f3d1580ad0fc239b66be5b5a245a3fe8d\classes.dex" />
+    </item>
+
+</items>

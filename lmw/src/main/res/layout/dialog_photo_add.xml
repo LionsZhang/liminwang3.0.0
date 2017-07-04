@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:paddingBottom="8dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp" >
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/dialog_exit_bg"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/forget_psw"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="我忘记交易密码了"
+            android:textColor="@color/text_blue"
+            android:textSize="@dimen/sp_14" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/list_default_divider" />
+        <TextView
+            android:id="@+id/know_psw"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/dialog_exit_bg"
+            android:gravity="center"
+            android:text="我记得交易密码"
+            android:textColor="@color/text_blue"
+            android:textSize="@dimen/sp_14" />
+
+        <View
+            android:id="@+id/view_del_top"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/list_default_divider" />
+
+        <TextView
+            android:id="@+id/btn_del"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/dialog_exit_bg"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@color/text_black"
+            android:visibility="gone"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/transparent" >
+        <TextView
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/dialog_exit_bg"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/text_blue"
+            android:textSize="@dimen/sp_14" />
+    </RelativeLayout>
+
+</RelativeLayout>

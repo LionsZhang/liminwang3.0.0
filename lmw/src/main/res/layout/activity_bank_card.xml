@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <!--添加银行卡-->
+    <FrameLayout
+        android:id="@+id/fl_add_bankcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_19"
+        android:background="@drawable/bg_gray_shape_corner"
+        android:paddingBottom="@dimen/dp_19"
+        android:paddingTop="@dimen/dp_19"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_add_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_suc"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:drawablePadding="@dimen/dp_11"
+            android:drawableTop="@drawable/ic_bangka_suc"
+            android:gravity="center"
+            android:text="@string/txt_add_bankcard"
+            android:textColor="@color/bule_press"
+            android:textSize="@dimen/sp_14"/>
+    </FrameLayout>
+
+    <include
+        layout="@layout/activity_card_info"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+
+
+</RelativeLayout>

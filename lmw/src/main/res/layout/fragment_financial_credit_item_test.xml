@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/select_list"
+              android:orientation="vertical">
+
+    <!--标题 标的-->
+    <RelativeLayout
+        android:id="@+id/rl_financial_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp_15"
+        android:paddingRight="@dimen/dp_15"
+        android:visibility="visible">
+        <TextView
+            android:id="@+id/types_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="定期宝"
+            android:textColor="@color/select_list_title"
+            android:textSize="@dimen/sp_16"/>
+        <TextView
+            android:id="@+id/type_Parameters_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:drawablePadding="@dimen/dp_3"
+            android:drawableRight="@drawable/finacial_rigtht_enter"
+            android:text="小额分散 安全透明"
+            android:textColor="@color/select_list_earnings"
+            android:textSize="@dimen/sp_14"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/select_list"/>
+    </RelativeLayout>
+
+
+    <com.example.administrator.lmw.view.InnerListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:id="@+id/all_item"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+    <com.example.administrator.lmw.view.CircleImageView
+        android:id="@+id/head_iv"
+        android:layout_width="@dimen/dp_77"
+        android:layout_height="@dimen/dp_77"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/dp_21"
+        android:layout_marginTop="@dimen/dp_53"
+        android:src="@drawable/img_my_boy"/>
+
+    <ImageView
+        android:id="@+id/img_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/head_iv"
+        android:layout_below="@+id/head_iv"
+        android:layout_marginLeft="38.5dp"
+        android:src="@drawable/xszy_mine"/>
+
+    <TextView
+        android:id="@+id/tip_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/head_iv"
+        android:layout_below="@+id/img_line"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="账户设置都藏在头像后面哦"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_16"/>
+</RelativeLayout>

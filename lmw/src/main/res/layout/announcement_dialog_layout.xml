@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/close"
+        android:layout_marginBottom="@dimen/dp_15"
+        android:layout_marginLeft="@dimen/dp_17"
+        android:layout_marginRight="@dimen/dp_17"
+        android:layout_marginTop="@dimen/dp_80"
+        android:background="@drawable/bj_gg">
+
+        <ImageView
+            android:id="@+id/logo_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_35"
+            android:src="@drawable/anouncement_logo"/>
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_240"
+            android:layout_below="@+id/logo_iv"
+            android:layout_marginTop="@dimen/dp_25"
+            android:gravity="left"
+            android:paddingBottom="@dimen/dp_6"
+            android:paddingLeft="@dimen/dp_23"
+            android:paddingRight="@dimen/dp_23"
+            android:paddingTop="@dimen/dp_6"
+            android:textColor="@color/text_black_pre"
+            android:textSize="@dimen/sp_14"
+            tools:ignore="WebViewLayout"/>
+
+        <Button
+            android:id="@+id/one_bt"
+            android:layout_width="@dimen/dp_213"
+            android:layout_height="@dimen/dp_40"
+            android:layout_below="@+id/webview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_20"
+            android:background="@drawable/btn_click_selector"
+            android:gravity="center"
+            android:text="立即体验"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14"/>
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/close_tc"/>
+
+
+    <!--联系客服-->
+    <ImageView
+        android:id="@+id/iv_customer_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="-20dp"
+        android:layout_alignTop="@+id/rl"
+        android:layout_marginTop="@dimen/dp_76"
+        android:src="@drawable/lxkf"
+        android:visibility="visible"/>
+
+</RelativeLayout>

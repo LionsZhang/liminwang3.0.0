@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+  >
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="@dimen/dp_17"
+        android:layout_marginLeft="@dimen/dp_17"
+        android:background="@drawable/bj_gg">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_24"
+            android:gravity="center"
+            android:padding="@dimen/dp_4"
+            android:text="利民网理财"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16" />
+
+        <ImageView
+            android:id="@+id/upgrade_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_19"
+            android:src="@drawable/quanmianshengji" />
+
+        <TextView
+            android:id="@+id/update_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginTop="@dimen/dp_50"
+            android:gravity="left"
+            android:paddingLeft="@dimen/dp_23"
+            android:textColor="@color/text_black_pre"
+            android:textSize="@dimen/sp_16" />
+
+        <ScrollView
+            android:id="@+id/tv_center_sl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_180"
+            android:layout_below="@+id/update_title"
+            android:fadingEdge="vertical"
+            android:fillViewport="true"
+            android:overScrollMode="ifContentScrolls"
+            android:scrollbars="none">
+
+            <TextView
+                android:id="@+id/tv_center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left"
+                android:paddingBottom="@dimen/dp_6"
+                android:paddingLeft="@dimen/dp_23"
+                android:paddingRight="@dimen/dp_23"
+                android:paddingTop="@dimen/dp_6"
+                android:textColor="@color/text_black_pre"
+                android:textSize="@dimen/sp_14" />
+        </ScrollView>
+
+        <Button
+            android:id="@+id/one_bt"
+            android:layout_width="@dimen/dp_213"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_center_sl"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_20"
+            android:background="@drawable/btn_click_selector"
+            android:gravity="center"
+            android:text="立即体验"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/dp_4"
+        android:layout_marginLeft="-12dp"
+        android:src="@drawable/guanbi_nol" />
+    <ImageView
+        android:id="@+id/gesture_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dp_240"
+        android:layout_marginLeft="-20dp"
+        android:visibility="invisible"
+        android:src="@drawable/huadong" />
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/dp_12"
+        android:paddingBottom="@dimen/dp_20"
+        android:background="@drawable/log_bg_photos">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_10"
+            android:gravity="center"
+            android:padding="@dimen/dp_4"
+            android:text="请验证交易密码"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_14"
+          />
+
+        <TextView
+            android:id="@+id/tv_center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/tv_title"
+            android:gravity="center"
+            android:text="提现"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/sp_14" />
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/tv_center"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:drawableLeft="@drawable/money"
+            android:drawablePadding="@dimen/dp_6"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_14" />
+
+        <View
+            android:id="@+id/line_1"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/tv_content"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_marginRight="@dimen/dp_12"
+            android:layout_marginTop="12dp"
+            android:visibility="gone"
+            android:background="@color/divide" />
+        <LinearLayout
+            android:id="@+id/psw_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_80"
+            android:layout_below="@+id/line_1"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/text_blue"
+            android:orientation="horizontal"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/psw_container"
+           android:padding="@dimen/dp_4"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/dialog_btn_rounded_left"
+            android:gravity="center"
+            android:text="忘记交易密码"
+            android:layout_marginRight="@dimen/dp_20"
+            android:textColor="@color/text_blue"
+            android:textSize="@dimen/sp_12" />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/dp_4"
+        android:layout_marginLeft="-12dp"
+        android:src="@drawable/guanbi_nol" />
+</RelativeLayout>

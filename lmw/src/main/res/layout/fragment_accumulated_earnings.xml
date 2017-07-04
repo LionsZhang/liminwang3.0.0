@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/select_list"
+    >
+
+
+    <com.example.administrator.lmw.view.PagerSlidingTabStrip
+        android:id="@+id/tab_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_43"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/white"
+        android:textColor="@color/announcement_tv"
+        android:textSize="@dimen/sp_14"
+        app:pstsDividerColor="@color/transparent"
+        app:pstsDividerPaddingTopBottom="@dimen/dp_12"
+        app:pstsIndicatorColor="@color/bg_bule"
+        app:pstsIndicatorHeight="0dp"
+        app:pstsScaleZoomMax="0"
+        app:pstsShouldExpand="true"
+        app:pstsSmoothScrollWhenClickTab="false"
+        app:pstsTabPaddingLeftRight="0dp"
+        app:pstsTextSelectedColor="@color/bg_bule"
+        app:pstsUnderlineColor="@color/select_list"
+        app:pstsUnderlineHeight="0dp"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab_top"
+        android:background="@color/select_list"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation"/>
+
+</RelativeLayout>

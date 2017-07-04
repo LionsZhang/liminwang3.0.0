@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_bule"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_item_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_42"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/message_announcement_rel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0">
+
+                <TextView
+                    android:id="@+id/message_announcement_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:padding="@dimen/dp_10"
+                    android:text="@string/notice"
+                    android:textColor="@color/select_list_earnings"
+                    android:textSize="@dimen/sp_13" />
+
+                <TextView
+                    android:id="@+id/message_announcement_item_tv"
+                    android:layout_width="@dimen/dp_18"
+                    android:layout_height="@dimen/dp_18"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:layout_toRightOf="@id/message_announcement_tv"
+                    android:background="@drawable/btn_ring_red"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textSize="9sp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/message_notice_rel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0">
+
+                <TextView
+                    android:id="@+id/message_notice_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:padding="@dimen/dp_10"
+                    android:text="@string/announcement"
+                    android:textColor="@color/select_list_earnings"
+                    android:textSize="@dimen/sp_13" />
+
+                <TextView
+                    android:id="@+id/message_notice_item_tv"
+                    android:layout_width="@dimen/dp_13"
+                    android:layout_height="@dimen/dp_13"
+                    android:layout_marginLeft="@dimen/dp_4"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:layout_toRightOf="@id/message_notice_tv"
+                    android:background="@drawable/btn_ring_red"
+                    android:gravity="center"
+                    android:text="99"
+                    android:textSize="9sp"
+                    android:visibility="gone" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/message_line_iv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="false"
+            android:scaleType="matrix"
+            android:src="@drawable/white_triangle" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/select_list"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+
+</LinearLayout>

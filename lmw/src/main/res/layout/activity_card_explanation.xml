@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_bule"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_item_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_15">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:lines="1"
+            android:text="红包使用说明"
+            android:textColor="@color/select_list_title"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="红包是利民网为了感谢投资者的支持，赠与投资者的现金金额，可以直接拆开红包获取现金，现金将直接放入您的账户可用余额中。"
+            android:textColor="@color/select_list_earnings"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="1.投资者可以直接到【我的-卡券红包】-【红包】中查看未拆红包，点击领取红包，获取现金。"
+            android:textColor="@color/announcement_tv"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="2.成功领取后，现金将直接放入您的账户可用余额中。可用于投资或提现。"
+            android:textColor="@color/announcement_tv"
+            android:textSize="10sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/dp_24"
+            android:background="@color/select_list_earnings" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_24"
+            android:lines="1"
+            android:text="现金券使用说明"
+            android:textColor="@color/select_list_title"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="现金券是利民网为了答谢新老用户，不定时通过活动、邀请、注册等方式，赠与用户的优惠，可以在投资激活后返现至您的账户可用余额中。"
+            android:textColor="@color/select_list_earnings"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="1.投资时不用勾选，输入投资金额之后，系统将自动按最优方案匹配现金券。投资后，系统自动激活现金劵到您的账户余额。单笔投资只能激活一张现金券。"
+            android:textColor="@color/announcement_tv"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="2.现金券需要满足使用条件（包括使用范围、投资期限等），方可投资激活。激活即可获得现金券同等面额返现。用户可至账户可用余额中查看、投资或提现。"
+            android:textColor="@color/announcement_tv"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="3.债权转让标的不可以使用现金券。"
+            android:textColor="@color/announcement_tv"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="4.当所投标的募集失败，系统自动返还现金券，同时现金券使用期限延长(追加从购买时间到募集结束时间的天数)。"
+            android:textColor="@color/announcement_tv"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

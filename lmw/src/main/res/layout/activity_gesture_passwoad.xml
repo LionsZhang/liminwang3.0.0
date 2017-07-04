@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/title_item_layout" />
+
+    <View
+        android:id="@+id/gesturelock_up"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_60"
+        android:layout_below="@+id/title_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_20"
+        android:visibility="invisible"
+       />
+
+    <TextView
+        android:id="@+id/tv_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gesturelock_up"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="请输入手势密码解锁"
+        android:textColor="@color/text_blue"
+        android:textSize="@dimen/sp_14" />
+
+    <com.syd.oden.gesturelock.view.GestureLockViewGroup
+        android:id="@+id/gesturelock"
+        android:layout_width="@dimen/dp_260"
+        android:layout_height="@dimen/dp_260"
+        android:layout_below="@+id/tv_state"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_20"
+        app:color_finger_on="@color/bg_bule"
+        app:color_finger_up_correct="@color/bg_bule"
+        app:color_finger_up_error="@color/psw_error_red"
+        app:color_no_finger="@color/psw_no_set_blue"
+        app:count="3"
+        app:preference_id="1" />
+
+    <TextView
+        android:id="@+id/hint_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp_40"
+        android:gravity="center"
+        android:text="您必须设置您的手势密码，用于保护您的隐私信息"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/sp_14" />
+</RelativeLayout>

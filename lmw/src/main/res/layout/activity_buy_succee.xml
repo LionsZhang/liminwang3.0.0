@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_bule"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_14">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/buy_image1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:adjustViewBounds="false"
+                        android:paddingBottom="@dimen/dp_1"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_xq_sp02" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:adjustViewBounds="false"
+                        android:paddingBottom="@dimen/dp_1"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_xq_sp01" />
+
+                </RelativeLayout>
+
+
+                <ImageView
+                    android:id="@+id/buy_image2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/buy_image1"
+                    android:layout_marginLeft="@dimen/dp_9"
+                    android:adjustViewBounds="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_xq_sp03" />
+
+                <ImageView
+                    android:id="@+id/buy_image3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/buy_image2"
+                    android:adjustViewBounds="false"
+                    android:paddingBottom="@dimen/dp_1"
+                    android:paddingTop="@dimen/dp_1"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_xq_sp02" />
+
+                <ImageView
+                    android:id="@+id/buy_image4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/buy_image3"
+                    android:layout_marginLeft="@dimen/dp_9"
+                    android:adjustViewBounds="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_xq_sp03" />
+
+                <ImageView
+                    android:id="@+id/buy_image5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/buy_image4"
+                    android:adjustViewBounds="false"
+                    android:paddingBottom="@dimen/dp_1"
+                    android:paddingTop="@dimen/dp_1"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_xq_sp02" />
+
+                <ImageView
+                    android:id="@+id/buy_image6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/buy_image5"
+                    android:layout_marginLeft="@dimen/dp_9"
+                    android:adjustViewBounds="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_xq_sp03" />
+
+                <ImageView
+                    android:id="@+id/buy_image7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/buy_image6"
+                    android:adjustViewBounds="false"
+                    android:paddingTop="@dimen/dp_1"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_xq_sp02" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/buy_image1"
+                    android:layout_marginLeft="@dimen/dp_14"
+                    android:layout_marginTop="@dimen/dp_3"
+                    android:layout_toRightOf="@id/buy_image1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/buy_succee_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/dp_11" />
+
+                    <TextView
+                        android:id="@+id/buy_datas_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_3"
+                        android:lines="1"
+                        android:text="2016-08-16"
+                        android:textColor="@color/select_list_earnings"
+                        android:textSize="@dimen/dp_10" />
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/buy_image3"
+                    android:layout_marginLeft="@dimen/dp_14"
+                    android:layout_marginTop="@dimen/dp_3"
+                    android:layout_toRightOf="@id/buy_image3"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_3"
+                        android:lines="1"
+                        android:text="起息日"
+                        android:textColor="@color/select_list_earnings"
+                        android:textSize="@dimen/dp_11" />
+
+                    <TextView
+                        android:id="@+id/buy_interest_data"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_3"
+                        android:lines="1"
+                        android:text=""
+                        android:textColor="@color/select_list_earnings"
+                        android:textSize="@dimen/dp_10" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/buy_lin5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/buy_image5"
+                    android:layout_marginLeft="@dimen/dp_14"
+                    android:layout_marginTop="@dimen/dp_3"
+                    android:layout_toRightOf="@id/buy_image5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_3"
+                        android:lines="1"
+                        android:text="可转让"
+                        android:textColor="@color/select_list_earnings"
+                        android:textSize="@dimen/dp_11" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_3"
+                        android:lines="1"
+                        android:text="持有60天后"
+                        android:textColor="@color/select_list_earnings"
+                        android:textSize="@dimen/dp_10" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/buy_image7"
+                    android:layout_marginLeft="@dimen/dp_14"
+                    android:layout_marginTop="@dimen/dp_3"
+                    android:layout_toRightOf="@id/buy_image7"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_3"
+                        android:lines="1"
+                        android:text="回款日"
+                        android:textColor="@color/select_list_earnings"
+                        android:textSize="@dimen/dp_11" />
+
+                    <TextView
+                        android:id="@+id/buy_payment_data"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_3"
+                        android:lines="1"
+
+                        android:text=""
+                        android:textColor="@color/select_list_earnings"
+                        android:textSize="@dimen/dp_10" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_40"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/buy_continue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/buy_green_btn"
+                    android:gravity="center"
+                    android:text="继续投资"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_16" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/buy_see"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/buy_blue_btn"
+                    android:gravity="center"
+                    android:text="查看投资记录"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_16" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

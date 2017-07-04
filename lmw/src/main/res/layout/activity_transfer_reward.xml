@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/select_list">
+
+
+    <!--无数据页面-->
+    <TextView
+        android:id="@+id/tv_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawablePadding="@dimen/dp_17"
+        android:drawableTop="@drawable/img_empty01"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp_50"
+        android:text="@string/is_empty_1"
+        android:textColor="@color/announcement_tv"
+        android:textSize="@dimen/sp_14"
+        android:visibility="gone"/>
+
+    <com.example.administrator.lmw.view.XListView
+        android:id="@+id/lv_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:divider="@null"/>
+
+
+</FrameLayout>
