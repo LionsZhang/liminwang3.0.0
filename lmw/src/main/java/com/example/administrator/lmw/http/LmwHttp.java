@@ -1,5 +1,6 @@
 package com.example.administrator.lmw.http;
 
+import com.example.administrator.lmw.BuildConfig;
 import com.example.administrator.lmw.utils.ALLog;
 import com.example.administrator.lmw.utils.APPUtil;
 import com.example.administrator.lmw.utils.MD5;
@@ -26,13 +27,13 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class LmwHttp {
 
     //public static String baseUrl = "http://www.limin.net/";//开发环境
-    public static String baseUrl = "http://m.liminwang.com.cn/";//存管测试环境
+ //   public static String baseUrl = "http://m.liminwang.com.cn/";//存管测试环境
     // public static String baseUrl = "http://m.liminwang.net/";//测试环境
 //    public static String baseUrl = "https://batem.limin.com/";//预发布环境
 //      public static String baseUrl = "https://m.limin.com/";//发布环境
 
     //  public static String baseUrl = "http://192.168.2.223:9080/";//前端联调环境
-
+    public static String baseUrl = BuildConfig.BASE_URL;
     private static final int DEFAULT_TIMEOUT = 60;
     private static LmwHttp instance;
     private static Retrofit retrofit;

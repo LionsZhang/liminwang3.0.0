@@ -1,4 +1,21 @@
 apply plugin: 'com.android.application'
+/*
+*环境配置：
+* test 测试
+* prepare 预发布
+* line  线上环境
+*  //public static String baseUrl = "http://www.limin.net/";//开发环境
+ //   public static String baseUrl = "http://m.liminwang.com.cn/";//存管测试环境
+    // public static String baseUrl = "http://m.liminwang.net/";//测试环境
+//    public static String baseUrl = "https://batem.limin.com/";//预发布环境
+//      public static String baseUrl = "https://m.limin.com/";//发布环境
+* */
+
+ext {
+    enviroment_config = "line"
+    baseUrl=""
+    IS_OPEN_LOG=""
+}
 android {
     compileSdkVersion 24
     buildToolsVersion '25.0.0'
@@ -11,15 +28,36 @@ android {
         multiDexEnabled true
         ndk {
             //选择要添加的对应cpu类型的.so库。
-            abiFilters 'armeabi', 'armeabi-v7a', 'armeabi-v8a','x86', 'x86_64', 'mips', 'mips64'
+            abiFilters 'armeabi', 'armeabi-v7a', 'armeabi-v8a', 'x86', 'x86_64', 'mips', 'mips64'
             // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
         }
-        manifestPlaceholders = [
-                JPUSH_PKGNAME : applicationId,
-                //   JPUSH_APPKEY : "deb1fd7494226f6330694737", //线上环境JPush上注册的包名对应的appkey.
-             JPUSH_APPKEY : "2ff667f965fe2b17ba731384", //测试环境JPush上注册的包名对应的appkey.
-                JPUSH_CHANNEL : "developer-default", //暂时填写默认值即可.
-        ]
+        /*     manifestPlaceholders = [
+                     JPUSH_PKGNAME     : applicationId,
+                     //   JPUSH_APPKEY : "deb1fd7494226f6330694737", //线上环境JPush上注册的包名对应的appkey.
+                     JPUSH_APPKEY: "2ff667f965fe2b17ba731384", //测试环境JPush上注册的包名对应的appkey.
+                     JPUSH_CHANNEL     : "developer-default", //暂时填写默认值即可.
+             ]*/
+        if (enviroment_config == "test") {
+            manifestPlaceholders = [JPUSH_PKGNAME: applicationId,
+                                    JPUSH_APPKEY : "2ff667f965fe2b17ba731384",
+                                    JPUSH_CHANNEL: "developer-default"]
+            rootProject.ext.IS_OPEN_LOG = "true"
+            rootProject.ext.baseUrl = "http://m.liminwang.com.cn/"
+        } else if (enviroment_config == "prepare") {
+            manifestPlaceholders = [JPUSH_PKGNAME: applicationId,
+                                    JPUSH_APPKEY : "deb1fd7494226f6330694737",
+                                    JPUSH_CHANNEL: "developer-default"]
+            rootProject.ext.IS_OPEN_LOG = "true"
+            rootProject.ext.baseUrl = "https://batem.limin.com/"
+        } else if (enviroment_config == "line") {
+            manifestPlaceholders = [JPUSH_PKGNAME: applicationId,
+                                    JPUSH_APPKEY : "deb1fd7494226f6330694737",
+                                    JPUSH_CHANNEL: "developer-default"]
+            rootProject.ext.IS_OPEN_LOG = "false"
+            rootProject.ext.baseUrl = "https://m.limin.com/"
+        }
+
+
     }
 
     //解决lint报错的代码
@@ -60,166 +98,77 @@ android {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.release
+            buildConfigField "String", "BASE_URL",
+                    "\"${rootProject.ext.baseUrl}\""
+            buildConfigField "boolean", "IS_OPEN_LOG",  "${rootProject.ext.IS_OPEN_LOG}"
             applicationVariants.all { variant ->
                 variant.outputs.each { output ->
                     def outputFile = output.outputFile
                     if (outputFile != null && outputFile.name.endsWith('.apk')) {
                         // 输出apk名称为XXXX_v1.0.0_wandoujia.apk
-                        def fileName = "${variant.productFlavors[0].name}_v${defaultConfig.versionName}_${defaultConfig.versionCode}_test.apk"
+                        def fileName = "${variant.productFlavors[0].name}_v${defaultConfig.versionName}_${defaultConfig.versionCode}_${enviroment_config}.apk"
                         output.outputFile = new File(outputFile.parent, fileName)
                     }
                 }
             }
         }
         debug {
-            signingConfig signingConfigs.release
+            // 移除无用的resource文件
+            shrinkResources true
+            zipAlignEnabled true
+            //混淆
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+            buildConfigField "String", "BASE_URL",
+                    "\"${rootProject.ext.baseUrl}\""
+            buildConfigField "boolean", "IS_OPEN_LOG",  "${rootProject.ext.IS_OPEN_LOG}"
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    def outputFile = output.outputFile
+                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                        // 输出apk名称为XXXX_v1.0.0_wandoujia.apk
+                        def fileName = "${variant.productFlavors[0].name}_v${defaultConfig.versionName}_${defaultConfig.versionCode}_${enviroment_config}.apk"
+                        output.outputFile = new File(outputFile.parent, fileName)
+                    }
+                }
+            }
         }
     }
 
-//多渠道打包
+
     productFlavors {
+/*     beta_test {//测试环境
+           // applicationId
+            applicationIdSuffix ".test"
+         resValue "string", "BASE_URL",
+                    "http://m.liminwang.net/";//测试环境
+            buildConfigField "boolean", "IS_OPEN_LOG", "false"
+           // manifestPlaceholders = [UMENG_CHANNEL_VALUE: "100000"]
+           *//* manifestPlaceholders = [JPUSH_APPKEY_VALUE: "2ff667f965fe2b17ba731384",
+                                    UMENG_CHANNEL_VALUE: "100000",JPUSH_CHANNEL: "developer-default"]*//*
+        }
+        beta_prapare {//预发布环境
+            applicationIdSuffix ".prapare"
+            resValue "string", "BASE_URL",
+                    "https://batem.limin.com/";
+            buildConfigField "boolean", "IS_OPEN_LOG", "false"
+//            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "100000",JPUSH_APPKEY_VALUE: "2ff667f965fe2b17ba731384",JPUSH_CHANNEL  : "developer-default"]
+           // manifestPlaceholders = [JPUSH_APPKEY_VALUE: "2ff667f965fe2b17ba731384"]
+        }
+        beta_produce {//线上环境
+            applicationIdSuffix ".produce"
+            resValue "string", "BASE_URL",
+                    "https://m.limin.com/";
+            buildConfigField "boolean", "IS_OPEN_LOG", "false"
+//            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "100000",JPUSH_APPKEY_VALUE: "deb1fd7494226f6330694737",JPUSH_CHANNEL     : "developer-default"]
+           // manifestPlaceholders = [JPUSH_APPKEY_VALUE: "deb1fd7494226f6330694737"]
+        }*/
+
+        //多渠道打包
         other {
             manifestPlaceholders = [UMENG_CHANNEL_VALUE: "100000"]
         }
-     /*   market360 {
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "market360"]
-        }
-        baidu {
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "baidu"]
-        }
-        yingyongbao {
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "yingyongbao"]
-        }
-        xiaomi {
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "xiaomi"]
-        }
-        oppo {
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "oppo"]
-        }
-        meizu {
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "meizu"]
-        }
-        huawei {
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "huawei"]
-        }
-        lianxiang {
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "lianxiang"]
-        }
-        vivo {
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "vivo"]
-        }
-        pp {
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "pp"]
-        }
-        wandoujia {
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "wandoujia"]
-        }
-        sougou {
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "sougou"]
-        }
-        anzhi {
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "anzhi"]
-        }
-        nduo {
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "nduo"]
-        }
-        jifeng {
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "jifeng"]
-        }
-        mumayi {
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "mumayi"]
-        }
-        youyi{
-
-   manifestPlaceholders = [UMENG_CHANNEL_VALUE: "youyi"]
-        }
-        liantong {
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "liantong"]
-        }
-        yidong {
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "yidong"]
-        }
-        leshi {
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "leshi"]
-        }
-        yingyonghui {
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "yingyonghui"]
-        }
-        sanxing {
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "sanxing"]
-        }
-        anzhuoyuan {
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "anzhuoyuan"]
-        }
-        anfen {
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "anfen"]
-        }
-        anbei {
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "anbei"]
-        }
-        anzhuojia {
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "anzhuojia"]
-        }
-        mopo {
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "mopo"]
-        }
-        yybei {
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "yybei"]
-        }
-        pc6 {
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "pc6"]
-        }
-        gionee {
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "gionee"]
-        }
-        tg001 {
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "tg001"]
-        }
-        tg002 {
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "tg002"]
-        }
-        tg003 {
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "tg003"]
-        }
-        tg004 {
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "tg004"]
-        }
-        tg005 {
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "tg005"]
-        }
-        tg006 {
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "tg006"]
-        }
-        tg007 {
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "tg007"]
-        }
-        tg008 {
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "tg008"]
-        }
-        tg009 {
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "tg009"]
-        }
-        tg010 {
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "tg010"]
-        }
-        tg011 {
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "tg011"]
-        }
-        tg011 {
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "tg011"]
-        }
-        tg012 {
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "tg012"]
-        }
-        tg013 {
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "tg013"]
-        }
-        tg014 {
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "tg014"]
-        }
-        tg015 {
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "tg015"]
-        }*/
     }
 }
 

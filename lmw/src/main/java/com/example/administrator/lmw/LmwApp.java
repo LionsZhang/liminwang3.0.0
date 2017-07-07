@@ -38,7 +38,7 @@ public class LmwApp extends Application {
     /**
      * 日志打印开关 false 不打印 true 打印
      */
-    public static final boolean DEBUG_FLAG = true;
+    public static final boolean DEBUG_FLAG = BuildConfig.IS_OPEN_LOG;
     // sp管理器
     private SharedPreference mSharedPreference;
 
